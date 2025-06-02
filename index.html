@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starnew Informática - Assistência Técnica Autorizada</title>
+    <title>Starnew Informática - Assistência Técnica Autorizada em Salvador</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -11,16 +11,6 @@
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Visualization & Content Choices:
-        - Homepage: Goal: Inform & Engage. Method: Hero section, service/product overviews, testimonial snippets, FAQ highlights. Interaction: CTAs, nav links, FAQ accordion. Justification: Immediate communication of value proposition.
-        - Quem Somos: Goal: Build Trust & Authority. Method: Narrative text for history, mission/vision, clear display of authorized partnerships (logos/text), team expertise. Justification: Essential for B2B credibility.
-        - Serviços: Goal: Detail Offerings. Method: Structured text for each service (preventiva/corretiva, autorizada, contratos), focusing on benefits. Interaction: CTAs for quotes/more info. Justification: Clear explanation of technical capabilities.
-        - Produtos/Locação: Goal: Showcase Portfolio & Facilitate Choice. Method: Categorized product listings (placeholders for images/specs), explicit "Compra" vs "Alugar" information for each controlled by JS toggle, comparative table. Interaction: CTAs for purchase/rental quotes, toggle buttons. Justification: Addresses key business area and user need for clear options.
-        - Clientes/Cases: Goal: Demonstrate Proven Success. Method: Placeholders for case studies (problem/solution/result), client testimonials, logos. Justification: Social proof is vital for B2B.
-        - Blog: Goal: Establish Thought Leadership & SEO. Method: Placeholder for recent article snippets with "read more". Justification: Content marketing aspect.
-        - Contato: Goal: Maximize Conversion. Method: Comprehensive contact form, direct contact info (phone, email, WhatsApp), map placeholder. Interaction: Form submission. Justification: Critical conversion point.
-        - No charts (Chart.js/Plotly.js) are used as the source report does not contain specific datasets suitable for charting; focus is on textual and structural presentation of information.
-        - Library/Method: HTML, Tailwind CSS, Vanilla JavaScript. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -37,7 +27,6 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease-out;
-            /* padding-top: 0; padding-bottom: 0; Removed from here to apply only when open */
         }
         .faq-answer.open {
             max-height: 500px; /* Adjust as needed for content */
@@ -85,10 +74,11 @@
         <section id="home" class="py-16 md:py-24 bg-slate-100 dark:bg-slate-800/50 transition-colors duration-300">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-700 dark:text-blue-400 mb-6">Starnew Informática</h1>
-                <p class="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-10 max-w-3xl mx-auto">Sua Especialista Autorizada em Nobreaks e Estabilizadores SMS, NHS e Ragtech. Garantimos a energia contínua do seu negócio.</p>
+                <p class="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-10 max-w-3xl mx-auto">Sua Especialista Autorizada em Nobreaks e Estabilizadores desde 1994. Garantimos a energia contínua e a proteção dos seus equipamentos com tradição, competência e qualidade em Salvador.</p>
                 <div class="space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#contato" class="inline-block bg-blue-600 dark:bg-blue-500 text-white px-10 py-3 rounded-md text-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors">Solicite um Orçamento</a>
                     <a href="#servicos" class="inline-block bg-teal-600 dark:bg-teal-500 text-white px-10 py-3 rounded-md text-lg font-semibold hover:bg-teal-700 dark:hover:bg-teal-400 transition-colors">Conheça Nossos Serviços</a>
+                    <a href="https://wa.me/557196943024?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Starnew." target="_blank" class="inline-block bg-green-500 text-white px-10 py-3 rounded-md text-lg font-semibold hover:bg-green-600 transition-colors">Fale Agora pelo WhatsApp</a>
                 </div>
             </div>
 
@@ -96,21 +86,36 @@
                 <h2 class="text-3xl font-semibold text-center mb-12 text-slate-700 dark:text-slate-200">Soluções Completas para Sua Empresa</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg text-center transition-colors duration-300">
-                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Serviços Especializados</h3>
-                        <p class="text-slate-600 dark:text-slate-300 mb-4">Manutenção preventiva, corretiva e assistência técnica autorizada para garantir a performance dos seus equipamentos.</p>
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Serviços Especializados em Energia</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4">Manutenção preventiva, corretiva e assistência técnica autorizada SMS, NHS e Ragtech para garantir a performance e a longevidade dos seus equipamentos.</p>
                         <a href="#servicos" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Saiba Mais &rarr;</a>
                     </div>
                     <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg text-center transition-colors duration-300">
                         <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Produtos e Locação</h3>
-                        <p class="text-slate-600 dark:text-slate-300 mb-4">Venda e aluguel de nobreaks, estabilizadores e mais, das melhores marcas do mercado.</p>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4">Venda e aluguel de nobreaks, estabilizadores e acessórios das melhores marcas, com soluções sob medida para sua casa ou empresa.</p>
                         <a href="#produtos-locacao" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Ver Produtos &rarr;</a>
                     </div>
                     <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg text-center md:col-span-2 lg:col-span-1 transition-colors duration-300">
-                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Parceria de Confiança</h3>
-                        <p class="text-slate-600 dark:text-slate-300 mb-4">Desde 1994 oferecendo soluções em energia com expertise e compromisso com a sua tranquilidade.</p>
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Tradição e Confiança desde 1994</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4">Quase três décadas de experiência oferecendo soluções em energia com expertise, atendimento personalizado e compromisso com a sua tranquilidade.</p>
                         <a href="#quemsomos" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Nossa História &rarr;</a>
                     </div>
                 </div>
+            </div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-24">
+                 <h2 class="text-3xl font-semibold text-center mb-12 text-slate-700 dark:text-slate-200">O que Nossos Clientes Dizem</h2>
+                 <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-inner">
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"[Placeholder para Depoimento Real 1: Exemplo: 'A Starnew resolveu nosso problema de energia rapidamente e com profissionalismo. Recomendo!']"</p>
+                        <p class="text-right font-semibold text-teal-600 dark:text-teal-400">- [Nome do Cliente 1], [Cargo/Empresa do Cliente 1]</p>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-inner">
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"[Placeholder para Depoimento Real 2: Exemplo: 'Desde que firmamos contrato com a Starnew, nossa preocupação com nobreaks diminuiu drasticamente.']"</p>
+                        <p class="text-right font-semibold text-teal-600 dark:text-teal-400">- [Nome do Cliente 2], [Cargo/Empresa do Cliente 2]</p>
+                    </div>
+                </div>
+                <p class="text-center mt-8"><a href="#clientes-cases" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Ver mais Cases de Sucesso &rarr;</a></p>
             </div>
 
             <div id="faq-home" class="container mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-24">
@@ -131,20 +136,35 @@
                             <span class="transform transition-transform duration-300 text-teal-500 dark:text-teal-400">&#9660;</span>
                         </button>
                         <div class="faq-answer px-5 text-slate-600 dark:text-slate-300">
-                            <p>Sim, oferecemos contratos corporativos personalizados para manutenção preventiva e corretiva, assegurando atendimento prioritário e otimização de custos para sua empresa.</p>
+                            <p>Sim, oferecemos contratos corporativos personalizados para manutenção preventiva e corretiva, assegurando atendimento prioritário e otimização de custos para sua empresa. <a href="#servicos" class="text-teal-600 dark:text-teal-400 font-semibold">Saiba mais sobre nossos contratos.</a></p>
                         </div>
                     </div>
                     <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md transition-colors duration-300">
                         <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
-                            Posso alugar um nobreak para um evento ou projeto temporário?
+                            Como funciona o processo de diagnóstico e aprovação de um serviço?
                             <span class="transform transition-transform duration-300 text-teal-500 dark:text-teal-400">&#9660;</span>
                         </button>
                         <div class="faq-answer px-5 text-slate-600 dark:text-slate-300">
-                            <p>Com certeza! Dispomos de um serviço de locação de nobreaks e estabilizadores flexível para atender suas necessidades pontuais, com equipamentos de alta qualidade.</p>
+                            <p>Após a entrada do equipamento, nossa equipe técnica realiza uma avaliação completa em até 72h. Apresentamos o diagnóstico e o orçamento para sua aprovação antes de qualquer intervenção. Em caso de reprovação, pode haver uma taxa de diagnóstico.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md transition-colors duration-300">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
+                            Qual a garantia dos serviços de manutenção?
+                            <span class="transform transition-transform duration-300 text-teal-500 dark:text-teal-400">&#9660;</span>
+                        </button>
+                        <div class="faq-answer px-5 text-slate-600 dark:text-slate-300">
+                            <p>Oferecemos garantia para todos os nossos serviços de manutenção. O prazo específico varia conforme o tipo de reparo e as peças utilizadas, sendo informado no momento do orçamento.</p>
                         </div>
                     </div>
                 </div>
                  <p class="text-center mt-8"><a href="#contato" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Tem mais dúvidas? Entre em contato &rarr;</a></p>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-24 text-center">
+                <h2 class="text-3xl font-semibold text-center mb-6 text-slate-700 dark:text-slate-200">Fique por Dentro</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">Acesse nosso blog para dicas, novidades e conteúdos relevantes sobre o setor de energia e proteção de equipamentos.</p>
+                <a href="#blog" class="inline-block bg-purple-600 dark:bg-purple-500 text-white px-10 py-3 rounded-md text-lg font-semibold hover:bg-purple-700 dark:hover:bg-purple-400 transition-colors">Visitar Blog Starnew</a>
             </div>
         </section>
 
@@ -152,22 +172,24 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">Quem Somos</h2>
-                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Nesta seção, você conhecerá mais sobre a Starnew Informática, nossa trajetória, nossos valores e o compromisso que temos com a excelência e a satisfação de nossos clientes B2B.</p>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Conheça a Starnew Informática LTDA, empresa baiana sólida, fundada em 1994 e localizada em Salvador. Com décadas de tradição, atuamos no comércio varejista especializado e na prestação de serviços de manutenção em equipamentos e suprimentos de informática, com foco em nobreaks e estabilizadores.</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-10 items-center">
                     <div>
                         <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Nossa História: Desde 1994</h3>
                         <p class="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-                            A Starnew Informática nasceu em 1994 com a missão de oferecer soluções de energia confiáveis e assistência técnica de alta qualidade. Ao longo de quase três décadas, construímos uma reputação sólida baseada na expertise técnica, no atendimento personalizado e na busca constante pela inovação. Nossa longevidade no mercado é um testemunho do nosso compromisso com a excelência e da confiança que nossos clientes depositam em nós.
+                            A Starnew Informática nasceu em 1994 com a missão de oferecer soluções de energia confiáveis e assistência técnica de alta qualidade. Ao longo de quase três décadas, construímos uma reputação sólida baseada na expertise técnica, no atendimento personalizado e na busca constante pela inovação. Nossa longevidade no mercado é um testemunho do nosso compromisso com a excelência e da confiança que nossos clientes depositam em nós. Destacamo-nos pela tradição no mercado, contando com uma equipe de colaboradores experientes e mantendo uma reputação positiva junto a clientes e parceiros.
                         </p>
                         <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4 mt-6">Missão, Visão e Valores</h3>
                         <p class="text-slate-600 dark:text-slate-300 mb-2"><strong class="text-slate-700 dark:text-slate-100">Missão:</strong> Garantir a continuidade e a segurança energética dos negócios de nossos clientes através de soluções e serviços técnicos especializados, com agilidade e confiabilidade.</p>
                         <p class="text-slate-600 dark:text-slate-300 mb-2"><strong class="text-slate-700 dark:text-slate-100">Visão:</strong> Ser a principal referência em assistência técnica e soluções de energia no mercado, reconhecida pela excelência, inovação e compromisso com o cliente.</p>
                         <p class="text-slate-600 dark:text-slate-300"><strong class="text-slate-700 dark:text-slate-100">Valores:</strong> Ética, Transparência, Qualidade, Comprometimento, Inovação e Foco no Cliente.</p>
+                        <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4 mt-6">Equipe Técnica Especializada</h3>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed">Nossa equipe é nosso maior diferencial. Contamos com técnicos altamente qualificados, incluindo o Sr. Matos, fundador e referência técnica da empresa, com vasta experiência e responsável pela formação de diversos profissionais. Investimos constantemente em treinamento para oferecer o melhor suporte e as soluções mais eficientes para seus equipamentos.</p>
                     </div>
                     <div class="bg-slate-100 dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
                         <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-6 text-center">Parceiros e Marcas Autorizadas</h3>
-                        <p class="text-slate-600 dark:text-slate-300 mb-6 text-center">Ser uma assistência técnica autorizada significa mais segurança e qualidade para você:</p>
+                        <p class="text-slate-600 dark:text-slate-300 mb-6 text-center">Somos assistência técnica autorizada das renomadas marcas SMS, NHS e Ragtech. Isso garante a você acesso a peças originais, técnicos certificados e a manutenção da garantia do seu equipamento, seguindo os mais rigorosos padrões de serviço.</p>
                         <div class="space-y-4">
                             <div class="p-4 bg-white dark:bg-slate-700 rounded-md shadow text-center transition-colors duration-300">
                                 <span class="text-xl font-bold text-slate-700 dark:text-slate-100">SMS</span>
@@ -182,7 +204,6 @@
                                 <p class="text-sm text-slate-500 dark:text-slate-400">Manutenção da garantia do fabricante.</p>
                             </div>
                         </div>
-                        <p class="text-slate-600 dark:text-slate-300 mt-6 text-center">Nossa equipe técnica é altamente qualificada e em constante atualização para oferecer o melhor suporte para os equipamentos dessas renomadas marcas.</p>
                     </div>
                 </div>
             </div>
@@ -192,41 +213,25 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">Nossos Serviços</h2>
-                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Descubra como a Starnew Informática pode ajudar sua empresa a manter a continuidade das operações e proteger seus equipamentos críticos com nossa gama de serviços especializados.</p>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">A Starnew Informática oferece um portfólio completo de serviços para garantir a proteção e o funcionamento ideal dos seus equipamentos de energia. Conte com nossa expertise e atendimento especializado.</p>
                 </div>
                 <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300 flex flex-col">
                         <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Manutenção Preventiva e Corretiva</h3>
                         <p class="text-slate-600 dark:text-slate-300 mb-3"><strong>Preventiva:</strong> Rotinas de inspeção, testes, limpeza e ajustes para evitar falhas e prolongar a vida útil dos seus nobreaks e estabilizadores.</p>
                         <p class="text-slate-600 dark:text-slate-300 mb-4"><strong>Corretiva:</strong> Diagnóstico preciso e reparo eficiente de falhas, minimizando o tempo de inatividade e restaurando a funcionalidade dos equipamentos.</p>
-                        <p class="text-slate-600 dark:text-slate-300 font-medium">Benefícios: Redução de downtime, otimização de desempenho, prevenção de custos maiores.</p>
-                        <a href="#contato" class="mt-6 inline-block text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Solicitar Manutenção &rarr;</a>
+                        <p class="text-slate-600 dark:text-slate-300 font-medium flex-grow">Benefícios: Redução de downtime, otimização de desempenho, prevenção de custos maiores com reparos complexos.</p>
+                        <a href="#contato" class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded-md text-center">Solicitar Orçamento de Manutenção</a>
                     </div>
-                    <div class="border-2 border-slate-700 bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
-                        <div class="mb-6">
-                            <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Assistência Técnica Autorizada</h3>
-                            <p class="text-slate-600 dark:text-slate-300 mb-3">Somos assistência técnica autorizada SMS, NHS e Ragtech. Isso garante:</p>
-                            <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1 mb-4">
-                                <li>Técnicos treinados pelos fabricantes.</li>
-                                <li>Uso de peças originais.</li>
-                                <li>Manutenção da garantia do seu equipamento.</li>
-                                <li>Acesso a manuais e ferramentas específicas.</li>
-                            </ul>
-                            <p class="text-slate-600 dark:text-slate-300">Conte com nossa expertise para cuidar dos seus equipamentos com o mais alto padrão de qualidade.</p>
-                        </div>
-                        <a href="#contato" class="mt-6 inline-block text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Acionar Assistência &rarr;</a>
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300 flex flex-col">
+                        <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Assistência Técnica Autorizada</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-3 flex-grow">Serviços exclusivos como autorizada SMS, NHS e Ragtech. Garantimos técnicos treinados pelos fabricantes, uso de peças originais, manutenção da garantia do seu equipamento e acesso a manuais e ferramentas específicas. Conte com nossa expertise para o mais alto padrão de qualidade.</p>
+                        <a href="#contato" class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded-md text-center">Acionar Assistência Técnica</a>
                     </div>
-                    <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300 flex flex-col">
                         <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Contratos Corporativos</h3>
-                        <p class="text-slate-600 dark:text-slate-300 mb-3">Para empresas que necessitam de suporte contínuo e prioritário, oferecemos contratos de manutenção personalizados.</p>
-                        <ul class="list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1 mb-4">
-                            <li>Atendimento prioritário.</li>
-                            <li>Planos de manutenção customizados.</li>
-                            <li>Custos previsíveis e otimizados.</li>
-                            <li>Relatórios detalhados de serviço.</li>
-                        </ul>
-                        <p class="text-slate-600 dark:text-slate-300">Ideal para garantir a máxima disponibilidade e performance dos seus sistemas de energia.</p>
-                        <a href="#contato" class="mt-6 inline-block text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">Consultar Planos &rarr;</a>
+                        <p class="text-slate-600 dark:text-slate-300 mb-3 flex-grow">Soluções personalizadas para empresas que necessitam de suporte contínuo e prioritário. Oferecemos planos de manutenção customizados, atendimento prioritário, custos previsíveis e relatórios detalhados. Ideal para garantir a máxima disponibilidade e performance dos seus sistemas de energia, permitindo que você foque no seu negócio.</p>
+                        <a href="#contato" class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded-md text-center">Consultar Planos Corporativos</a>
                     </div>
                 </div>
             </div>
@@ -236,7 +241,7 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">Produtos e Locação</h2>
-                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Explore nosso portfólio de nobreaks, estabilizadores e outros equipamentos de informática, disponíveis para venda e locação, atendendo às diversas necessidades do seu negócio B2B.</p>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Explore nosso catálogo de nobreaks, estabilizadores, computadores, periféricos e acessórios de informática. Oferecemos as melhores marcas para venda e opções flexíveis de locação para atender suas necessidades.</p>
                 </div>
                 <div class="mb-10 text-center">
                      <button id="show-compra" class="product-toggle-btn px-6 py-2 rounded-l-md font-semibold transition-colors">Ver Produtos para Compra</button>
@@ -247,52 +252,53 @@
                     <h3 class="text-2xl font-semibold text-center mb-8 text-blue-700 dark:text-blue-400">Para Compra</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">Imagem do Nobreak SMS X</div>
+                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem do Nobreak SMS PowerVision II]</div>
                             <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Nobreak SMS PowerVision II</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Ideal para estações de trabalho e pequenos servidores. Tecnologia interativa.</p>
-                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Capacidade: 1.5kVA | Tensão: Bivolt</p>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Ideal para estações de trabalho e pequenos servidores. Tecnologia interativa, proteção confiável e design moderno.</p>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Capacidade: Ex: 1.5kVA] | [Tensão: Ex: Bivolt]</p>
                             <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
                         </div>
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                           <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">Imagem do Estabilizador NHS Y</div>
+                           <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem do Estabilizador NHS Premium]</div>
                             <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Estabilizador NHS Premium</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Proteção robusta para equipamentos sensíveis contra variações de tensão.</p>
-                             <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Potência: 1000W | Microprocessado</p>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Proteção robusta para equipamentos sensíveis contra variações de tensão. Tecnologia microprocessada para maior eficiência.</p>
+                             <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Potência: Ex: 1000W] | Microprocessado</p>
                             <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
                         </div>
                          <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">Imagem do Computador Z</div>
+                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem do Computador Corporativo]</div>
                             <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Computador Corporativo</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Desktops e notebooks configurados para alta performance em ambientes empresariais.</p>
-                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Processador i5 | 8GB RAM | SSD 256GB</p>
-                            <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Desktops e notebooks configurados para alta performance em ambientes empresariais. Consulte modelos e configurações.</p>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Ex: Processador i5 | 8GB RAM | SSD 256GB]</p>
+                            <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Consultar Modelos</a>
                         </div>
                     </div>
+                     <p class="text-center mt-8 text-slate-600 dark:text-slate-300">Para mais detalhes, especificações e outros modelos, <a href="#contato" class="text-teal-600 dark:text-teal-400 font-semibold">entre em contato</a>.</p>
                 </div>
 
                 <div id="locacao-section" class="hidden">
                     <h3 class="text-2xl font-semibold text-center mb-8 text-teal-700 dark:text-teal-400">Para Locação</h3>
                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                             <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">Imagem Nobreak Ragtech para Locação</div>
-                            <h4 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Nobreak Ragtech Senoidal 3kVA</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Solução de alta capacidade para eventos, projetos ou necessidades temporárias. Energia pura e estável.</p>
-                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Autonomia estendida opcional.</p>
+                             <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem Nobreak Ragtech para Locação]</div>
+                            <h4 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Nobreak Ragtech Senoidal [Ex: 3kVA]</h4>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Solução de alta capacidade para eventos, projetos ou necessidades temporárias. Energia pura e estável para seus equipamentos críticos.</p>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Autonomia estendida opcional. Consulte condições.</p>
                             <a href="#contato" class="mt-auto block w-full text-center bg-teal-500 dark:bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-600 dark:hover:bg-teal-500 transition-colors font-semibold">Orçamento de Locação</a>
                         </div>
                          <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">Imagem de Estabilizador para Locação</div>
+                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem de Estabilizador para Locação]</div>
                             <h4 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Estabilizador de Grande Porte</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Para equipamentos que demandam alta potência e proteção superior durante períodos específicos.</p>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Para equipamentos que demandam alta potência e proteção superior durante períodos específicos. Ideal para aplicações industriais ou eventos.</p>
                             <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Disponível em diversas capacidades.</p>
                             <a href="#contato" class="mt-auto block w-full text-center bg-teal-500 dark:bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-600 dark:hover:bg-teal-500 transition-colors font-semibold">Orçamento de Locação</a>
                         </div>
                     </div>
-                     <p class="text-center mt-8 text-slate-600 dark:text-slate-300">A locação inclui manutenção e suporte técnico durante o período contratado.</p>
+                     <p class="text-center mt-8 text-slate-600 dark:text-slate-300">A locação inclui manutenção e suporte técnico durante o período contratado. <a href="#contato" class="text-teal-600 dark:text-teal-400 font-semibold">Fale conosco para mais informações.</a></p>
                 </div>
 
                 <div class="mt-16 bg-slate-100 dark:bg-slate-800/50 p-8 rounded-lg shadow transition-colors duration-300">
-                    <h3 class="text-xl font-semibold text-center mb-6 text-slate-700 dark:text-slate-200">Comprar vs. Alugar: Qual a melhor opção?</h3>
+                    <h3 class="text-xl font-semibold text-center mb-6 text-slate-700 dark:text-slate-200">Comprar vs. Alugar: Qual a melhor opção para sua empresa?</h3>
                     <div class="overflow-x-auto">
                         <table class="w-full min-w-max text-sm text-left text-slate-600 dark:text-slate-300">
                             <thead class="text-xs text-slate-700 dark:text-slate-200 uppercase bg-slate-200 dark:bg-slate-700">
@@ -311,17 +317,17 @@
                                 <tr class="bg-slate-50 dark:bg-slate-800/60 border-b dark:border-slate-700">
                                     <td class="px-6 py-4 font-medium text-slate-900 dark:text-slate-100">Manutenção</td>
                                     <td class="px-6 py-4">Responsabilidade e custo do proprietário</td>
-                                    <td class="px-6 py-4">Geralmente inclusa no contrato</td>
+                                    <td class="px-6 py-4">Geralmente inclusa no contrato de locação</td>
                                 </tr>
                                 <tr class="bg-white dark:bg-slate-800 border-b dark:border-slate-700">
                                     <td class="px-6 py-4 font-medium text-slate-900 dark:text-slate-100">Atualização Tecnológica</td>
-                                    <td class="px-6 py-4">Requer nova compra</td>
-                                    <td class="px-6 py-4">Fácil acesso a modelos mais novos</td>
+                                    <td class="px-6 py-4">Requer nova compra para atualizar</td>
+                                    <td class="px-6 py-4">Fácil acesso a modelos mais novos ao fim do contrato</td>
                                 </tr>
                                 <tr class="bg-slate-50 dark:bg-slate-800/60">
                                     <td class="px-6 py-4 font-medium text-slate-900 dark:text-slate-100">Flexibilidade Curto Prazo</td>
-                                    <td class="px-6 py-4">Menor</td>
-                                    <td class="px-6 py-4">Alta (ideal para projetos pontuais)</td>
+                                    <td class="px-6 py-4">Menor (compromisso de longo prazo)</td>
+                                    <td class="px-6 py-4">Alta (ideal para projetos ou necessidades pontuais)</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -335,41 +341,41 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">Clientes e Cases de Sucesso</h2>
-                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Veja como a Starnew Informática tem ajudado empresas como a sua a superar desafios de energia e garantir a operacionalidade, construindo parcerias de confiança e sucesso.</p>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">A confiança de nossos clientes é nosso maior ativo. Veja algumas empresas que confiam na Starnew Informática e conheça histórias reais de como ajudamos a resolver desafios de energia e garantir a operacionalidade.</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
                     <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
-                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Case: Indústria Alimentícia XYZ</h3>
-                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Desafio:</strong> Paradas frequentes na linha de produção devido à instabilidade da rede elétrica, causando perdas significativas.</p>
-                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Solução Starnew:</strong> Instalação de nobreaks online de dupla conversão SMS de alta capacidade e contrato de manutenção preventiva.</p>
-                        <p class="text-slate-600 dark:text-slate-300"><strong>Resultados:</strong> Redução de 95% nas interrupções, aumento da produtividade e economia com perdas evitadas.</p>
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">[Nome do Cliente/Case 1 - Ex: Indústria Alimentícia XYZ]</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Desafio:</strong> [Descrever o problema enfrentado pelo cliente. Ex: Paradas frequentes na linha de produção devido à instabilidade da rede elétrica, causando perdas significativas.]</p>
+                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Solução Starnew:</strong> [Detalhar a solução implementada. Ex: Instalação de nobreaks online de dupla conversão SMS de alta capacidade e contrato de manutenção preventiva.]</p>
+                        <p class="text-slate-600 dark:text-slate-300"><strong>Resultados:</strong> [Quantificar os resultados. Ex: Redução de 95% nas interrupções, aumento da produtividade e economia com perdas evitadas.]</p>
                     </div>
                     <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
-                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Case: Hospital Regional ABC</h3>
-                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Desafio:</strong> Necessidade de garantir energia ininterrupta para equipamentos críticos em UTIs e centro cirúrgico.</p>
-                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Solução Starnew:</strong> Fornecimento e instalação de sistema de nobreaks redundantes NHS e plano de contingência.</p>
-                        <p class="text-slate-600 dark:text-slate-300"><strong>Resultados:</strong> Operação contínua assegurada durante falhas na rede, garantindo a segurança dos pacientes.</p>
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">[Nome do Cliente/Case 2 - Ex: Hospital Regional ABC]</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Desafio:</strong> [Descrever o problema. Ex: Necessidade de garantir energia ininterrupta para equipamentos críticos em UTIs e centro cirúrgico.]</p>
+                        <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Solução Starnew:</strong> [Detalhar a solução. Ex: Fornecimento e instalação de sistema de nobreaks redundantes NHS e plano de contingência.]</p>
+                        <p class="text-slate-600 dark:text-slate-300"><strong>Resultados:</strong> [Quantificar os resultados. Ex: Operação contínua assegurada durante falhas na rede, garantindo a segurança dos pacientes.]</p>
                     </div>
                 </div>
                 <h3 class="text-2xl font-semibold text-center mb-8 text-slate-700 dark:text-slate-200">O que nossos clientes dizem</h3>
                 <div class="grid md:grid-cols-2 gap-8">
                      <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-inner transition-colors duration-300">
-                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"A Starnew é nossa parceira há anos. O atendimento é rápido e a equipe técnica é muito competente. Nossos sistemas nunca estiveram tão seguros."</p>
-                        <p class="text-right font-semibold text-teal-600 dark:text-teal-400">- João Silva, Diretor de TI, Empresa Alfa</p>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"[Placeholder para Depoimento Real 3: Exemplo: A Starnew é nossa parceira há anos. O atendimento é rápido e a equipe técnica é muito competente. Nossos sistemas nunca estiveram tão seguros.]"</p>
+                        <p class="text-right font-semibold text-teal-600 dark:text-teal-400">- [Nome do Cliente 3], [Cargo/Empresa do Cliente 3]</p>
                     </div>
                     <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-inner transition-colors duration-300">
-                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"Contratamos a locação de nobreaks para um evento e fomos muito bem atendidos. Equipamentos de qualidade e suporte impecável."</p>
-                        <p class="text-right font-semibold text-teal-600 dark:text-teal-400">- Maria Oliveira, Gerente de Eventos, Agência Beta</p>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-4">"[Placeholder para Depoimento Real 4: Exemplo: Contratamos a locação de nobreaks para um evento e fomos muito bem atendidos. Equipamentos de qualidade e suporte impecável.]"</p>
+                        <p class="text-right font-semibold text-teal-600 dark:text-teal-400">- [Nome do Cliente 4], [Cargo/Empresa do Cliente 4]</p>
                     </div>
                 </div>
                 <div class="mt-12 text-center">
-                    <h3 class="text-2xl font-semibold text-slate-700 dark:text-slate-200 mb-4">Alguns de nossos clientes</h3>
+                    <h3 class="text-2xl font-semibold text-slate-700 dark:text-slate-200 mb-4">Alguns de Nossos Clientes</h3>
                     <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-slate-500 dark:text-slate-400">
-                        <span class="text-lg font-medium">Empresa Alfa</span>
-                        <span class="text-lg font-medium">Indústria XYZ</span>
-                        <span class="text-lg font-medium">Hospital Regional ABC</span>
-                        <span class="text-lg font-medium">Escritório Delta</span>
-                        <span class="text-lg font-medium">Comércio Gama</span>
+                        <span class="text-lg font-medium">[Logo Cliente 1 ou Nome]</span>
+                        <span class="text-lg font-medium">[Logo Cliente 2 ou Nome]</span>
+                        <span class="text-lg font-medium">[Logo Cliente 3 ou Nome]</span>
+                        <span class="text-lg font-medium">[Logo Cliente 4 ou Nome]</span>
+                        <span class="text-lg font-medium">[Logo Cliente 5 ou Nome]</span>
                     </div>
                 </div>
             </div>
@@ -379,36 +385,36 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">Blog Starnew</h2>
-                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Mantenha-se informado com as últimas notícias, dicas e artigos técnicos sobre nobreaks, estabilizadores e soluções de energia, preparados por nossos especialistas.</p>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Mantenha-se informado com artigos técnicos, dicas e novidades do universo de nobreaks, estabilizadores e soluções de energia. Conteúdo relevante para educar e posicionar a Starnew como autoridade no setor.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <article class="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-colors duration-300">
-                        <div class="h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-400 dark:text-slate-500">Imagem do Artigo 1</div>
+                        <div class="h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-400 dark:text-slate-500">[Imagem do Artigo 1]</div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Como escolher o nobreak ideal para sua empresa</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 flex-grow">Entenda os diferentes tipos de nobreaks e os fatores cruciais para tomar a decisão certa e proteger seus equipamentos.</p>
-                            <a href="#" class="mt-auto text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold self-start">Leia Mais &rarr;</a>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 flex-grow">Entenda os diferentes tipos de nobreaks (offline, interativo, online dupla conversão) e os fatores cruciais (capacidade, autonomia, tipo de carga) para tomar a decisão certa e proteger seus equipamentos críticos.</p>
+                            <a href="blog/template.html" class="mt-auto text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold self-start">Leia Mais &rarr;</a>
                         </div>
                     </article>
                     <article class="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-colors duration-300">
-                        <div class="h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-400 dark:text-slate-500">Imagem do Artigo 2</div>
+                        <div class="h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-400 dark:text-slate-500">[Imagem do Artigo 2]</div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">A importância da manutenção preventiva em estabilizadores</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 flex-grow">Descubra como a manutenção regular pode evitar falhas inesperadas e prolongar a vida útil dos seus estabilizadores.</p>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 flex-grow">Descubra como a manutenção regular, incluindo limpeza interna e verificação de componentes, pode evitar falhas inesperadas, garantir a proteção eficaz dos seus aparelhos e prolongar a vida útil dos seus estabilizadores.</p>
                             <a href="#" class="mt-auto text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold self-start">Leia Mais &rarr;</a>
                         </div>
                     </article>
                     <article class="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-colors duration-300">
-                         <div class="h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-400 dark:text-slate-500">Imagem do Artigo 3</div>
+                         <div class="h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-400 dark:text-slate-500">[Imagem do Artigo 3]</div>
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Nobreaks Senoidais vs. Aproximados: Qual a diferença?</h3>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 flex-grow">Um guia prático para entender as tecnologias de onda e qual é mais adequada para cada tipo de equipamento.</p>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-4 flex-grow">Um guia prático para entender as tecnologias de onda senoidal pura e senoidal por aproximação (PWM), e qual é mais adequada para cada tipo de equipamento, especialmente os mais sensíveis.</p>
                            <a href="#" class="mt-auto text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold self-start">Leia Mais &rarr;</a>
                         </div>
                     </article>
                 </div>
                 <div class="text-center mt-12">
-                     <a href="#" class="bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors">Ver todos os artigos</a>
+                     <a href="#blog" class="bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors">Ver todos os artigos</a>
                 </div>
             </div>
         </section>
@@ -417,43 +423,44 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">Entre em Contato</h2>
-                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Estamos prontos para atender sua empresa. Preencha o formulário, ligue ou envie uma mensagem. Nossos especialistas em energia retornarão o mais breve possível. Nossos formulários são projetados para capturar as informações necessárias para alimentar futuros sistemas de automação e CRM, garantindo um acompanhamento eficiente.</p>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Estamos prontos para atender sua empresa. Preencha o formulário, ligue ou envie uma mensagem pelo WhatsApp. Nossos especialistas em energia retornarão o mais breve possível.</p>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-10 items-start">
                     <form id="contactForm" class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg space-y-6 transition-colors duration-300">
                         <div>
                             <label for="nome" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Nome Completo</label>
-                            <input type="text" name="nome" id="nome" required class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+                            <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
                         </div>
                         <div>
                             <label for="empresa" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Nome da Empresa</label>
-                            <input type="text" name="empresa" id="empresa" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+                            <input type="text" name="empresa" id="empresa" placeholder="Digite o nome da sua empresa" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
                         </div>
                          <div>
                             <label for="cnpj" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">CNPJ (Opcional)</label>
-                            <input type="text" name="cnpj" id="cnpj" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+                            <input type="text" name="cnpj" id="cnpj" placeholder="00.000.000/0000-00" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">E-mail</label>
-                            <input type="email" name="email" id="email" required class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+                            <input type="email" name="email" id="email" required placeholder="seu.email@empresa.com.br" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
                         </div>
                         <div>
                             <label for="telefone" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Telefone</label>
-                            <input type="tel" name="telefone" id="telefone" required class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+                            <input type="tel" name="telefone" id="telefone" required placeholder="(71) 99999-9999" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
                         </div>
                         <div>
                             <label for="assunto" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Assunto</label>
                             <select id="assunto" name="assunto" class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300">
-                                <option>Solicitação de Orçamento</option>
-                                <option>Suporte Técnico Urgente</option>
-                                <option>Informações sobre Locação</option>
-                                <option>Contratos Corporativos</option>
-                                <option>Outros Assuntos</option>
+                                <option value="" disabled selected>Selecione o assunto</option>
+                                <option value="orcamento">Solicitação de Orçamento</option>
+                                <option value="suporte">Suporte Técnico Urgente</option>
+                                <option value="locacao">Informações sobre Locação</option>
+                                <option value="contratos">Contratos Corporativos</option>
+                                <option value="outros">Outros Assuntos</option>
                             </select>
                         </div>
                         <div>
                             <label for="mensagem" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Mensagem</label>
-                            <textarea name="mensagem" id="mensagem" rows="4" required class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300"></textarea>
+                            <textarea name="mensagem" id="mensagem" rows="4" required placeholder="Descreva sua necessidade ou dúvida. Quanto mais detalhes, melhor poderemos atendê-lo." class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300"></textarea>
                         </div>
                         <div>
                             <button type="submit" class="w-full bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors">Enviar Mensagem</button>
@@ -463,19 +470,28 @@
                     <div class="space-y-8">
                         <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
                             <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Outras Formas de Contato</h3>
-                            <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Telefone:</strong> (XX) XXXX-XXXX / (XX) 9XXXX-XXXX (WhatsApp)</p>
-                            <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>E-mail:</strong> <a href="mailto:contato@starnew.com.br" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300">contato@starnew.com.br</a></p>
-                            <p class="text-slate-600 dark:text-slate-300 mb-4"><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 8h às 18h.</p>
-                            <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Starnew%20Informática." target="_blank" class="inline-flex items-center bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600 transition-colors font-semibold">
+                            <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>Telefone:</strong>  (71) 3276-0406 / <a href="https://wa.me/557196943024?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Starnew%20Informática." target="_blank" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300">71 9694-3024 (WhatsApp)</a></p>
+                            <p class="text-slate-600 dark:text-slate-300 mb-2"><strong>E-mail:</strong> <a href="mailto:starnew@starnew.com.br" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300">starnew@starnew.com.br</a></p>
+                            <p class="text-slate-600 dark:text-slate-300 mb-4"><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 8h às 17h30.</p>
+                            <a href="https://wa.me/557196943024?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Starnew%20Informática." target="_blank" class="inline-flex items-center bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600 transition-colors font-semibold">
                                 <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.487 5.235 3.487 8.413 0 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.173.198-.297.297-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.47.074-.717.372-.247.297-.967.925-.967 2.255 0 1.33.985 2.622 1.134 2.795.149.173 1.957 3.075 4.76 4.227.713.306 1.365.489 1.827.627.85.232 1.62.198 2.23.124.67-.074 1.758-.717 2.006-1.413.248-.696.248-1.289.173-1.413z"/></svg>
                                 Chamar no WhatsApp
                             </a>
                         </div>
                          <div class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
                             <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Nossa Localização</h3>
-                            <p class="text-slate-600 dark:text-slate-300 mb-4">Rua Exemplo, 123 - Bairro Modelo<br>Cidade - UF, CEP XXXXX-XXX</p>
-                            <div class="h-64 bg-slate-200 dark:bg-slate-700 rounded-md flex items-center justify-center text-slate-500 dark:text-slate-400">
-                                Mapa Interativo (Google Maps Placeholder)
+                            <p class="text-slate-600 dark:text-slate-300 mb-4">Av Professor Rômulo Almeida, 38, Edifício Executive Center, Loja B, Acupe de Brotas, Salvador, Bahia</p>
+                            <div class="h-64 bg-slate-200 dark:bg-slate-700 rounded-md overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9999999999995!2d-38.49999999999999!3d-12.999999999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b87ebfffd4d7%3A0x89b87ebfffd4d773!2sStarnew%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    class="rounded-md"
+                                ></iframe>
                             </div>
                         </div>
                     </div>
@@ -489,7 +505,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h4 class="text-lg font-semibold text-white dark:text-slate-200 mb-3">Starnew Informática</h4>
-                    <p class="text-sm">Desde 1994, sua especialista em nobreaks e estabilizadores. Assistência Técnica Autorizada SMS, NHS e Ragtech.</p>
+                    <p class="text-sm">Desde 1994, sua especialista em nobreaks e estabilizadores. Assistência Técnica Autorizada SMS, NHS e Ragtech em Salvador, Bahia.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white dark:text-slate-200 mb-3">Links Rápidos</h4>
@@ -503,16 +519,17 @@
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white dark:text-slate-200 mb-3">Contato</h4>
-                    <p class="text-sm mb-1">Telefone: (XX) XXXX-XXXX</p>
-                    <p class="text-sm mb-1">Email: <a href="mailto:contato@starnew.com.br" class="hover:text-teal-400 dark:hover:text-teal-300">contato@starnew.com.br</a></p>
-                    <p class="text-sm">Rua Exemplo, 123 - Cidade - UF</p>
+                    <p class="text-sm mb-1">Telefone: (71) 3276-0406 / 71 9694-3024 (WhatsApp)</p>
+                    <p class="text-sm mb-1">WhatsApp: 71 9694-3024</p>
+                    <p class="text-sm mb-1">Email: <a href="mailto:starnew@starnew.com.br" class="hover:text-teal-400 dark:hover:text-teal-300">starnew@starnew.com.br</a></p>
+                    <p class="text-sm">Av Professor Rômulo Almeida, 38, Edifício Executive Center, Loja B, Acupe de Brotas, Salvador, Bahia</p>
                 </div>
             </div>
             <div class="mt-10 pt-8 border-t border-slate-700 dark:border-slate-600 text-center text-sm">
                 <p>&copy; <span id="currentYear"></span> Starnew Informática. Todos os direitos reservados.</p>
                 <p class="mt-1">
-                    <a href="#" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Política de Privacidade</a> | 
-                    <a href="#" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Termos de Uso</a>
+                    <a href="#privacidade" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Política de Privacidade</a> | 
+                    <a href="#termos" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Termos de Uso</a>
                 </p>
             </div>
         </div>
@@ -617,6 +634,7 @@
                     formMessage.textContent = 'Enviando sua mensagem...';
                     formMessage.className = 'text-sm text-blue-600 dark:text-blue-400';
 
+                    // Simulate form submission
                     setTimeout(() => {
                         formMessage.textContent = 'Sua mensagem foi enviada com sucesso! Responderemos em até 24 horas úteis.';
                         formMessage.className = 'text-sm text-green-600 dark:text-green-400';
@@ -641,12 +659,10 @@
                 });
 
                 if (!currentSectionId && sections.length > 0 && pageYOffset < sections[0].offsetTop - offset) {
-                     // If above the first section's activation zone, make 'home' (if it's the first) active.
                     if (sections[0].id === 'home') {
                         currentSectionId = 'home';
                     }
                 }
-
 
                 navLinks.forEach(link => {
                     link.classList.remove('text-teal-600', 'dark:text-teal-400', 'font-semibold');
@@ -669,15 +685,12 @@
             const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
             function applyTheme(theme) {
-                console.log('applyTheme', theme);
                 if (theme === 'dark') {
-                    console.log('theme is dark');
                     document.documentElement.classList.add('dark');
                     if(themeToggleDarkIcon) themeToggleDarkIcon.classList.remove('hidden');
                     if(themeToggleLightIcon) themeToggleLightIcon.classList.add('hidden');
                     localStorage.setItem('theme', 'dark');
                 } else {
-                    console.log('theme is light');
                     document.documentElement.classList.remove('dark');
                     if(themeToggleDarkIcon) themeToggleDarkIcon.classList.add('hidden');
                     if(themeToggleLightIcon) themeToggleLightIcon.classList.remove('hidden');
@@ -686,17 +699,23 @@
             }
 
             let preferredTheme = localStorage.getItem('theme');
+            if (preferredTheme !== 'dark') { 
+                preferredTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+            } 
+
             if (!preferredTheme) {
-                preferredTheme = 'dark'; // Default to dark
+                preferredTheme = 'light';
             }
-            
+
+            if (!localStorage.getItem('theme') && document.documentElement.classList.contains('dark')) {
+                preferredTheme = 'dark';
+            }
+
             if(themeToggleBtn && themeToggleDarkIcon && themeToggleLightIcon) {
                 applyTheme(preferredTheme); 
 
                 themeToggleBtn.addEventListener('click', () => {
-                    console.log('themeToggleBtn clicked');
                     const isDarkMode = document.documentElement.classList.contains('dark');
-                    console.log('isDarkMode', isDarkMode);
                     applyTheme(isDarkMode ? 'light' : 'dark');
                 });
             }
