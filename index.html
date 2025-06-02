@@ -33,6 +33,13 @@
             padding-top: 0.75rem; /* Tailwind pt-3 */
             padding-bottom: 1.25rem; /* Tailwind pb-5 */
         }
+        /* Estilos para carrossel e abas */
+        .product-carousel .carousel-indicator.active-indicator {
+            background-color: white; /* Cor para modo claro */
+        }
+        .dark .product-carousel .carousel-indicator.active-indicator {
+            background-color: #cbd5e1; /* slate-300 - Cor para modo escuro */
+        }
     </style>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300">
@@ -126,7 +133,7 @@
                             Quais marcas de nobreaks vocês são assistência autorizada?
                             <span class="transform transition-transform duration-300 text-teal-500 dark:text-teal-400">&#9660;</span>
                         </button>
-                        <div class="faq-answer px-5 text-slate-600 dark:text-slate-300">
+                        <div class="faq-answer px-5 text-slate-600 dark:text-slate-300"> 
                             <p>Somos assistência técnica autorizada das principais marcas do mercado: SMS, NHS e Ragtech, garantindo peças originais e serviço especializado.</p>
                         </div>
                     </div>
@@ -135,11 +142,11 @@
                             Vocês oferecem contratos de manutenção para empresas?
                             <span class="transform transition-transform duration-300 text-teal-500 dark:text-teal-400">&#9660;</span>
                         </button>
-                        <div class="faq-answer px-5 text-slate-600 dark:text-slate-300">
+                        <div class="faq-answer px-5 text-slate-600 dark:text-slate-300"> 
                             <p>Sim, oferecemos contratos corporativos personalizados para manutenção preventiva e corretiva, assegurando atendimento prioritário e otimização de custos para sua empresa. <a href="#servicos" class="text-teal-600 dark:text-teal-400 font-semibold">Saiba mais sobre nossos contratos.</a></p>
                         </div>
                     </div>
-                    <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md transition-colors duration-300">
+                     <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md transition-colors duration-300">
                         <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
                             Como funciona o processo de diagnóstico e aprovação de um serviço?
                             <span class="transform transition-transform duration-300 text-teal-500 dark:text-teal-400">&#9660;</span>
@@ -243,53 +250,202 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-200">Produtos e Locação</h2>
                     <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Explore nosso catálogo de nobreaks, estabilizadores, computadores, periféricos e acessórios de informática. Oferecemos as melhores marcas para venda e opções flexíveis de locação para atender suas necessidades.</p>
                 </div>
+                
                 <div class="mb-10 text-center">
-                     <button id="show-compra" class="product-toggle-btn px-6 py-2 rounded-l-md font-semibold transition-colors">Ver Produtos para Compra</button>
-                     <button id="show-locacao" class="product-toggle-btn px-6 py-2 rounded-r-md font-semibold transition-colors">Ver Produtos para Locação</button>
+                     <button id="show-compra-geral" class="product-type-toggle-btn px-6 py-2 rounded-l-md font-semibold transition-colors">Para Compra</button>
+                     <button id="show-locacao-geral" class="product-type-toggle-btn px-6 py-2 rounded-r-md font-semibold transition-colors">Para Locação</button>
                 </div>
 
-                <div id="compra-section">
-                    <h3 class="text-2xl font-semibold text-center mb-8 text-blue-700 dark:text-blue-400">Para Compra</h3>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem do Nobreak SMS PowerVision II]</div>
-                            <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Nobreak SMS PowerVision II</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Ideal para estações de trabalho e pequenos servidores. Tecnologia interativa, proteção confiável e design moderno.</p>
-                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Capacidade: Ex: 1.5kVA] | [Tensão: Ex: Bivolt]</p>
-                            <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
-                        </div>
-                        <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                           <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem do Estabilizador NHS Premium]</div>
-                            <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Estabilizador NHS Premium</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Proteção robusta para equipamentos sensíveis contra variações de tensão. Tecnologia microprocessada para maior eficiência.</p>
-                             <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Potência: Ex: 1000W] | Microprocessado</p>
-                            <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
-                        </div>
-                         <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem do Computador Corporativo]</div>
-                            <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Computador Corporativo</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Desktops e notebooks configurados para alta performance em ambientes empresariais. Consulte modelos e configurações.</p>
-                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Ex: Processador i5 | 8GB RAM | SSD 256GB]</p>
-                            <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Consultar Modelos</a>
+                <div id="compra-section-container">
+                    <h3 class="text-2xl font-semibold text-center mb-8 text-blue-700 dark:text-blue-400">Nossos Produtos Novos para Compra</h3>
+                    <div class="mb-8 flex flex-wrap justify-center gap-2 sm:gap-4" role="tablist" aria-label="Marcas de Nobreaks para Compra">
+                        <button type="button" role="tab" aria-selected="true" aria-controls="nhs-products-compra" id="tab-nhs-compra" class="brand-tab-button px-4 py-2 sm:px-6 sm:py-2 rounded-md font-semibold transition-colors text-sm sm:text-base">NHS</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="sms-products-compra" id="tab-sms-compra" class="brand-tab-button px-4 py-2 sm:px-6 sm:py-2 rounded-md font-semibold transition-colors text-sm sm:text-base">SMS</button>
+                        <!-- <button type="button" role="tab" aria-selected="false" aria-controls="ragtech-products-compra" id="tab-ragtech-compra" class="brand-tab-button px-4 py-2 sm:px-6 sm:py-2 rounded-md font-semibold transition-colors text-sm sm:text-base">Ragtech</button> -->
+                        <!-- <button type="button" role="tab" aria-selected="false" aria-controls="outros-products-compra" id="tab-outros-compra" class="brand-tab-button px-4 py-2 sm:px-6 sm:py-2 rounded-md font-semibold transition-colors text-sm sm:text-base">Outros</button> -->
+                    </div>
+
+                    <div id="nhs-products-compra" role="tabpanel" aria-labelledby="tab-nhs-compra" class="brand-tab-content-panel">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
+                                <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <img src="images/catalogo/venda-novos/nhs-mini4-700va.webp" alt="Nobreak NHS Mini III 700VA - Vista Frontal" class="object-contain w-full h-full">
+                                    </div>
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                         <img src="images/catalogo/venda-novos/nhs-mini4-700va-2.png" alt="Nobreak NHS Mini III 700VA - Vista Lateral" class="object-contain w-full h-full">
+                                    </div>
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <img src="images/catalogo/venda-novos/nhs-mini4-700va-3.webp" alt="Nobreak NHS Mini III 700VA - Vista Traseira" class="object-contain w-full h-full">
+                                    </div>
+                                    <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                    </button>
+                                    <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                    </button>
+                                    <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;">
+                                    </div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Nobreak NHS Mini III 700VA</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Ideal para PDVs, computadores e equipamentos de áudio/vídeo. Interativo com regulação online.</p>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Capacidade: 700VA | Tensão: Bivolt automático</p>
+                                <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
+                            </div>
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
+                                <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <img src="images/catalogo/venda-novos/nhs-1500va.webp" alt="Nobreak NHS PDV 1500VA - Vista Frontal" class="object-contain w-full h-full">
+                                    </div>
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                         <img src="images/catalogo/venda-novos/nhs-1500va-2.png" alt="Nobreak NHS PDV 1500VA - Vista Lateral" class="object-contain w-full h-full">
+                                    </div>
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <img src="images/catalogo/venda-novos/nhs-1500va-3.webp" alt="Nobreak NHS PDV 1500VA - Vista Traseira" class="object-contain w-full h-full">
+                                    </div>
+                                   <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                    </button>
+                                    <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                    </button>
+                                    <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;">
+                                    </div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Nobreak NHS PDV 1500VA</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Solução robusta para pontos de venda, servidores de pequeno porte e sistemas de CFTV. Alta performance e confiabilidade.</p>
+                                 <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Capacidade: 1500VA | Tensão: Bivolt automático</p>
+                                <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
+                            </div>
+                             <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
+                                <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                         <img src="images/catalogo/venda-novos/nhs-premium2000va.webp" alt="Nobreak NHS Premium 2000VA - Vista Frontal" class="object-contain w-full h-full">
+                                    </div>
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <img src="images/catalogo/venda-novos/nhs-premium2000va-2.png" alt="Nobreak NHS Premium 2000VA - Vista Traseira" class="object-contain w-full h-full">
+                                    </div>
+                                    <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                    </button>
+                                    <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                    </button>
+                                    <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;">
+                                    </div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Nobreak NHS Premium 2000VA</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Proteção avançada para equipamentos que exigem energia de alta qualidade e maior autonomia. Ideal para servidores e sistemas críticos.</p>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Capacidade: 2000VA | Senoidal | Bivolt</p>
+                                <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
+                            </div>
                         </div>
                     </div>
-                     <p class="text-center mt-8 text-slate-600 dark:text-slate-300">Para mais detalhes, especificações e outros modelos, <a href="#contato" class="text-teal-600 dark:text-teal-400 font-semibold">entre em contato</a>.</p>
+
+                    <div id="sms-products-compra" role="tabpanel" aria-labelledby="tab-sms-compra" class="brand-tab-content-panel hidden">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
+                                <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <span class="text-slate-500 dark:text-slate-400 p-2 text-center">Imagem 1 Nobreak SMS</span>
+                                    </div>
+                                    <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> </button>
+                                    <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg> </button>
+                                    <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;"></div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Nobreak SMS [Modelo Exemplo]</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Descrição do produto SMS...</p>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Especificações]</p>
+                                <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
+                            </div>
+                            </div>
+                         <p class="text-center mt-4 text-slate-500 dark:text-slate-400">Mais produtos SMS em breve.</p>
+                    </div>
+
+                    <!-- <div id="ragtech-products-compra" role="tabpanel" aria-labelledby="tab-ragtech-compra" class="brand-tab-content-panel hidden">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
+                                <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                    <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <span class="text-slate-500 dark:text-slate-400 p-2 text-center">Imagem 1 Nobreak Ragtech</span>
+                                    </div>
+                                     <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> </button>
+                                    <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg> </button>
+                                    <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;"></div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Nobreak Ragtech [Modelo Exemplo]</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Descrição do produto Ragtech...</p>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">[Especificações]</p>
+                                <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Solicitar Cotação</a>
+                            </div>
+                            </div>
+                        <p class="text-center mt-4 text-slate-500 dark:text-slate-400">Mais produtos Ragtech em breve.</p>
+                    </div> -->
+                    
+                    <!-- <div id="outros-products-compra" role="tabpanel" aria-labelledby="tab-outros-compra" class="brand-tab-content-panel hidden">
+                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
+                                <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                     <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <span class="text-slate-500 dark:text-slate-400 p-2 text-center">Imagem Estabilizador</span>
+                                    </div>
+                                     <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> </button>
+                                    <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg> </button>
+                                    <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;"></div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Estabilizadores Diversos</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Proteção para seus equipamentos contra variações de tensão.</p>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Várias potências e modelos</p>
+                                <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Consultar Modelos</a>
+                            </div>
+                             <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
+                                <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                     <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                        <span class="text-slate-500 dark:text-slate-400 p-2 text-center">Imagem Computador</span>
+                                    </div>
+                                     <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> </button>
+                                    <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg> </button>
+                                    <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;"></div>
+                                </div>
+                                <h4 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Computadores e Periféricos</h4>
+                                <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Soluções completas em informática para sua empresa.</p>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Montagem e configurações personalizadas</p>
+                                <a href="#contato" class="mt-auto block w-full text-center bg-blue-500 dark:bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors font-semibold">Ver Opções</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-4 text-slate-500 dark:text-slate-400">Consulte-nos sobre outros equipamentos e acessórios.</p>
+                    </div> -->
+                    <p class="text-center mt-8 text-slate-600 dark:text-slate-300">Para mais detalhes, especificações e outros modelos, <a href="#contato" class="text-teal-600 dark:text-teal-400 font-semibold">entre em contato</a>.</p>
                 </div>
 
-                <div id="locacao-section" class="hidden">
-                    <h3 class="text-2xl font-semibold text-center mb-8 text-teal-700 dark:text-teal-400">Para Locação</h3>
+                <div id="locacao-section-container" class="hidden">
+                    <h3 class="text-2xl font-semibold text-center mb-8 text-teal-700 dark:text-teal-400">Nossos Produtos para Locação</h3>
                      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                             <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem Nobreak Ragtech para Locação]</div>
-                            <h4 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Nobreak Ragtech Senoidal [Ex: 3kVA]</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Solução de alta capacidade para eventos, projetos ou necessidades temporárias. Energia pura e estável para seus equipamentos críticos.</p>
-                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Autonomia estendida opcional. Consulte condições.</p>
+                             <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                 <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                    <span class="text-slate-500 dark:text-slate-400 p-2 text-center">Imagem 1 Nobreak para Locação</span>
+                                </div>
+                                 <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> </button>
+                                <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg> </button>
+                                <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;"></div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Nobreak [Marca/Modelo] para Locação</h4>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Solução de alta capacidade para eventos, projetos ou necessidades temporárias. Energia pura e estável.</p>
+                            <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Autonomia estendida opcional.</p>
                             <a href="#contato" class="mt-auto block w-full text-center bg-teal-500 dark:bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-600 dark:hover:bg-teal-500 transition-colors font-semibold">Orçamento de Locação</a>
                         </div>
                          <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg flex flex-col transition-colors duration-300">
-                            <div class="h-40 bg-slate-200 dark:bg-slate-700 rounded-md mb-4 flex items-center justify-center text-slate-500 dark:text-slate-400">[Imagem de Estabilizador para Locação]</div>
-                            <h4 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Estabilizador de Grande Porte</h4>
-                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Para equipamentos que demandam alta potência e proteção superior durante períodos específicos. Ideal para aplicações industriais ou eventos.</p>
+                           <div class="product-carousel relative h-48 rounded-md mb-4 overflow-hidden bg-slate-200 dark:bg-slate-700">
+                                 <div class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0">
+                                    <span class="text-slate-500 dark:text-slate-400 p-2 text-center">Imagem 1 Estabilizador para Locação</span>
+                                </div>
+                                 <button aria-label="Imagem anterior" class="carousel-prev absolute top-1/2 left-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg> </button>
+                                <button aria-label="Próxima imagem" class="carousel-next absolute top-1/2 right-1 transform -translate-y-1/2 bg-black/20 dark:bg-black/40 text-white p-2 rounded-full hover:bg-black/40 dark:hover:bg-black/60 focus:outline-none transition-colors duration-150 cursor-pointer z-20" style="display: none;"> <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg> </button>
+                                <div class="carousel-indicators absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1.5" style="display: none;"></div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Estabilizador de Grande Porte para Locação</h4>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm mb-3 flex-grow">Para equipamentos que demandam alta potência e proteção superior durante períodos específicos.</p>
                             <p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Disponível em diversas capacidades.</p>
                             <a href="#contato" class="mt-auto block w-full text-center bg-teal-500 dark:bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-600 dark:hover:bg-teal-500 transition-colors font-semibold">Orçamento de Locação</a>
                         </div>
@@ -542,6 +698,206 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            function initializeProductBrandTabs() {
+                const compraSectionContainer = document.getElementById('compra-section-container');
+                if (!compraSectionContainer) return;
+
+                const tabButtons = compraSectionContainer.querySelectorAll('.brand-tab-button');
+                const tabPanels = compraSectionContainer.querySelectorAll('.brand-tab-content-panel');
+
+                if (tabButtons.length === 0 || tabPanels.length === 0) return;
+
+                function setBrandButtonState(button, isActive) {
+                    const baseButtonClasses = ['px-4', 'py-2', 'sm:px-6', 'sm:py-2', 'rounded-md', 'font-semibold', 'transition-colors', 'text-sm', 'sm:text-base', 'cursor-pointer'];
+                    const activeClasses = ['bg-blue-600', 'text-white', 'dark:bg-blue-500', 'dark:text-white'];
+                    const inactiveClasses = ['bg-slate-200', 'text-slate-700', 'dark:bg-slate-700', 'dark:text-slate-300', 'hover:bg-slate-300', 'dark:hover:bg-slate-600'];
+                    
+                    button.classList.remove(...activeClasses, ...inactiveClasses);
+                    button.classList.add(...baseButtonClasses);
+
+                    if (isActive) {
+                        button.classList.add(...activeClasses);
+                        button.setAttribute('aria-selected', 'true');
+                    } else {
+                        button.classList.add(...inactiveClasses);
+                        button.setAttribute('aria-selected', 'false');
+                    }
+                }
+
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        tabButtons.forEach(btn => setBrandButtonState(btn, false));
+                        tabPanels.forEach(panel => panel.classList.add('hidden'));
+
+                        setBrandButtonState(button, true);
+                        const targetPanelId = button.getAttribute('aria-controls');
+                        const targetPanel = compraSectionContainer.querySelector(`#${targetPanelId}`);
+                        if (targetPanel) {
+                            targetPanel.classList.remove('hidden');
+                        }
+                        // Reinitialize carousels if they are in the newly shown tab panel
+                        if (typeof initializeCarousels === 'function') {
+                             setTimeout(initializeCarousels, 50); // Pequeno delay para garantir renderização
+                        }
+                    });
+                });
+
+                // Ativar a primeira aba de marca por padrão (NHS)
+                if (tabButtons.length > 0) {
+                    setBrandButtonState(tabButtons[0], true);
+                    const firstPanelId = tabButtons[0].getAttribute('aria-controls');
+                    const firstPanel = compraSectionContainer.querySelector(`#${firstPanelId}`);
+                    if (firstPanel) {
+                        firstPanel.classList.remove('hidden');
+                    }
+                     if (typeof initializeCarousels === 'function') {
+                         setTimeout(initializeCarousels, 50);
+                     }
+                }
+            }
+
+
+            // Lógica para alternar entre Compra Geral e Locação Geral
+            const showCompraGeralBtn = document.getElementById('show-compra-geral');
+            const showLocacaoGeralBtn = document.getElementById('show-locacao-geral');
+            const compraSectionContainer = document.getElementById('compra-section-container');
+            const locacaoSectionContainer = document.getElementById('locacao-section-container'); // Renomeei o ID para clareza
+
+            const productTypeToggleConfig = {
+                compra: {
+                    btn: showCompraGeralBtn,
+                    section: compraSectionContainer,
+                    activeClasses: ['bg-blue-600', 'text-white', 'dark:bg-blue-500', 'dark:text-white', 'hover:bg-blue-700', 'dark:hover:bg-blue-400'],
+                    inactiveClasses: ['bg-slate-200', 'text-slate-700', 'dark:bg-slate-700', 'dark:text-slate-300', 'hover:bg-slate-300', 'dark:hover:bg-slate-600']
+                },
+                locacao: {
+                    btn: showLocacaoGeralBtn,
+                    section: locacaoSectionContainer,
+                    activeClasses: ['bg-teal-600', 'text-white', 'dark:bg-teal-500', 'dark:text-white', 'hover:bg-teal-700', 'dark:hover:bg-teal-400'],
+                    inactiveClasses: ['bg-slate-200', 'text-slate-700', 'dark:bg-slate-700', 'dark:text-slate-300', 'hover:bg-slate-300', 'dark:hover:bg-slate-600']
+                }
+            };
+
+            function updateProductTypeToggleView(activeType) {
+                Object.keys(productTypeToggleConfig).forEach(type => {
+                    const config = productTypeToggleConfig[type];
+                    if (config.btn && config.section) {
+                        config.btn.classList.remove(...config.activeClasses, ...config.inactiveClasses);
+                        if (type === activeType) {
+                            config.section.style.display = 'block';
+                            config.btn.classList.add(...config.activeClasses);
+                            if (type === 'compra') { // Se a aba de compra for ativada, inicializa as abas de marca
+                                initializeProductBrandTabs();
+                            }
+                        } else {
+                            config.section.style.display = 'none';
+                            config.btn.classList.add(...config.inactiveClasses);
+                        }
+                    }
+                });
+                 // Certifique-se de que os carrosséis são inicializados após a exibição da seção
+                if (typeof initializeCarousels === 'function') {
+                    setTimeout(initializeCarousels, 50);
+                }
+            }
+            
+            if (showCompraGeralBtn && showLocacaoGeralBtn) {
+                 updateProductTypeToggleView('compra'); // Default to 'compra' view
+                showCompraGeralBtn.addEventListener('click', () => updateProductTypeToggleView('compra'));
+                showLocacaoGeralBtn.addEventListener('click', () => updateProductTypeToggleView('locacao'));
+            }
+
+
+            // Carrossel de Imagens de Produto (COPIADO DA RESPOSTA ANTERIOR)
+            function initializeCarousels() {
+                const carousels = document.querySelectorAll('.product-carousel');
+                carousels.forEach((carousel) => {
+                    const itemsContainer = carousel; // O próprio product-carousel contém os items
+                    const items = itemsContainer.querySelectorAll('.carousel-item');
+                    const prevButton = carousel.querySelector('.carousel-prev');
+                    const nextButton = carousel.querySelector('.carousel-next');
+                    const indicatorsContainer = carousel.querySelector('.carousel-indicators');
+                    let currentItemIndex = 0;
+                    
+                    const imageItems = Array.from(items).filter(item => item.querySelector('img'));
+                    const totalValidItems = imageItems.length;
+
+                    if (totalValidItems === 0) {
+                        if(items.length > 0) { // Mostra o primeiro placeholder se não houver imagens
+                            items[0].classList.remove('opacity-0', 'z-0');
+                            items[0].classList.add('opacity-100', 'z-10');
+                        }
+                        if(prevButton) prevButton.style.display = 'none';
+                        if(nextButton) nextButton.style.display = 'none';
+                        if(indicatorsContainer) indicatorsContainer.style.display = 'none';
+                        return;
+                    }
+                    
+                    items.forEach(item => { // Esconde todos os placeholders se houver imgs
+                        if (!item.querySelector('img')) {
+                            item.style.display = 'none';
+                        } else {
+                            item.style.display = 'flex'; // Garante que itens com img sejam flex
+                        }
+                    });
+
+                    if (totalValidItems <= 1) {
+                        if(prevButton) prevButton.style.display = 'none';
+                        if(nextButton) nextButton.style.display = 'none';
+                        if(indicatorsContainer) indicatorsContainer.style.display = 'none';
+                        if (totalValidItems === 1) {
+                            imageItems[0].classList.remove('opacity-0', 'z-0');
+                            imageItems[0].classList.add('opacity-100', 'z-10');
+                        }
+                        return;
+                    }
+
+                    if(prevButton) prevButton.style.display = 'block';
+                    if(nextButton) nextButton.style.display = 'block';
+                    if(indicatorsContainer) indicatorsContainer.style.display = 'flex';
+                    
+                    indicatorsContainer.innerHTML = ''; 
+                    imageItems.forEach((_, index) => {
+                        const button = document.createElement('button');
+                        button.setAttribute('aria-label', `Ir para imagem ${index + 1}`);
+                        button.classList.add('carousel-indicator', 'w-2', 'h-2', 'md:w-2.5', 'md:h-2.5', 'bg-white/40', 'dark:bg-white/30', 'rounded-full', 'hover:bg-white/70', 'dark:hover:bg-white/50', 'transition-colors', 'cursor-pointer');
+                        button.addEventListener('click', () => showItem(index));
+                        indicatorsContainer.appendChild(button);
+                    });
+                    const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+
+                    function showItem(index) {
+                        imageItems.forEach((item, i) => {
+                            item.classList.remove('opacity-100', 'z-10');
+                            item.classList.add('opacity-0', 'z-0');
+                            if (i === index) {
+                                item.classList.remove('opacity-0', 'z-0');
+                                item.classList.add('opacity-100', 'z-10');
+                            }
+                        });
+                        indicators.forEach((indicator, i) => {
+                            indicator.classList.remove('active-indicator');
+                            if (i === index) {
+                                indicator.classList.add('active-indicator');
+                            }
+                        });
+                        currentItemIndex = index;
+                    }
+
+                    if(prevButton) prevButton.addEventListener('click', () => {
+                        let newIndex = currentItemIndex - 1;
+                        if (newIndex < 0) newIndex = totalValidItems - 1;
+                        showItem(newIndex);
+                    });
+
+                    if(nextButton) nextButton.addEventListener('click', () => {
+                        let newIndex = currentItemIndex + 1;
+                        if (newIndex >= totalValidItems) newIndex = 0;
+                        showItem(newIndex);
+                    });
+                    showItem(0); 
+                });
+            }
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             if (mobileMenuButton && mobileMenu) {
@@ -568,7 +924,8 @@
                 });
             });
             
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            const currentYearEl = document.getElementById('currentYear');
+            if(currentYearEl) currentYearEl.textContent = new Date().getFullYear();
 
             const faqQuestions = document.querySelectorAll('.faq-question');
             faqQuestions.forEach(question => {
@@ -578,53 +935,21 @@
                     const isOpen = answer.classList.contains('open');
                     
                     faqQuestions.forEach(otherQuestion => {
-                        otherQuestion.nextElementSibling.classList.remove('open');
-                        otherQuestion.querySelector('span').style.transform = 'rotate(0deg)';
+                        if (otherQuestion !== question) {
+                           otherQuestion.nextElementSibling.classList.remove('open');
+                           otherQuestion.querySelector('span').style.transform = 'rotate(0deg)';
+                        }
                     });
 
                     if (!isOpen) {
                         answer.classList.add('open');
                         icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        answer.classList.remove('open');
+                        icon.style.transform = 'rotate(0deg)';
                     }
                 });
             });
-            
-            const productToggleConfig = {
-                compra: {
-                    btn: document.getElementById('show-compra'),
-                    section: document.getElementById('compra-section'),
-                    activeClasses: ['bg-blue-600', 'text-white', 'dark:bg-blue-500', 'dark:text-white', 'hover:bg-blue-700', 'dark:hover:bg-blue-400'],
-                    inactiveClasses: ['bg-slate-200', 'text-slate-700', 'dark:bg-slate-700', 'dark:text-slate-300', 'hover:bg-slate-300', 'dark:hover:bg-slate-600']
-                },
-                locacao: {
-                    btn: document.getElementById('show-locacao'),
-                    section: document.getElementById('locacao-section'),
-                    activeClasses: ['bg-teal-600', 'text-white', 'dark:bg-teal-500', 'dark:text-white', 'hover:bg-teal-700', 'dark:hover:bg-teal-400'],
-                    inactiveClasses: ['bg-slate-200', 'text-slate-700', 'dark:bg-slate-700', 'dark:text-slate-300', 'hover:bg-slate-300', 'dark:hover:bg-slate-600']
-                }
-            };
-
-            function updateProductToggleView(activeType) {
-                Object.keys(productToggleConfig).forEach(type => {
-                    const config = productToggleConfig[type];
-                    if (config.btn && config.section) {
-                        config.btn.classList.remove(...config.activeClasses, ...config.inactiveClasses);
-                        if (type === activeType) {
-                            config.section.style.display = 'block';
-                            config.btn.classList.add(...config.activeClasses);
-                        } else {
-                            config.section.style.display = 'none';
-                            config.btn.classList.add(...config.inactiveClasses);
-                        }
-                    }
-                });
-            }
-            
-            if (productToggleConfig.compra.btn && productToggleConfig.locacao.btn) {
-                 updateProductToggleView('compra'); 
-                productToggleConfig.compra.btn.addEventListener('click', () => updateProductToggleView('compra'));
-                productToggleConfig.locacao.btn.addEventListener('click', () => updateProductToggleView('locacao'));
-            }
             
             const contactForm = document.getElementById('contactForm');
             if (contactForm) {
@@ -634,7 +959,6 @@
                     formMessage.textContent = 'Enviando sua mensagem...';
                     formMessage.className = 'text-sm text-blue-600 dark:text-blue-400';
 
-                    // Simulate form submission
                     setTimeout(() => {
                         formMessage.textContent = 'Sua mensagem foi enviada com sucesso! Responderemos em até 24 horas úteis.';
                         formMessage.className = 'text-sm text-green-600 dark:text-green-400';
@@ -676,7 +1000,7 @@
             }
 
             if (sections.length > 0 && navLinks.length > 0) {
-                 changeNavActiveState(); // Initial call
+                 changeNavActiveState(); 
                  window.addEventListener('scroll', changeNavActiveState);
             }
 
@@ -699,26 +1023,23 @@
             }
 
             let preferredTheme = localStorage.getItem('theme');
-            if (preferredTheme !== 'dark') { 
-                preferredTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-            } 
-
-            if (!preferredTheme) {
-                preferredTheme = 'light';
-            }
-
             if (!localStorage.getItem('theme') && document.documentElement.classList.contains('dark')) {
                 preferredTheme = 'dark';
+            } else if (!localStorage.getItem('theme')) {
+                preferredTheme = 'light'; 
             }
-
+            
             if(themeToggleBtn && themeToggleDarkIcon && themeToggleLightIcon) {
                 applyTheme(preferredTheme); 
-
                 themeToggleBtn.addEventListener('click', () => {
                     const isDarkMode = document.documentElement.classList.contains('dark');
                     applyTheme(isDarkMode ? 'light' : 'dark');
                 });
             }
+            // Chamada final para inicializar todas as funcionalidades que dependem do DOM
+            updateProductTypeToggleView('compra'); // Inclui a chamada para initializeProductBrandTabs e initializeCarousels
+
+
         });
     </script>
 </body>
