@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título do Artigo Aqui - Blog Starnew Informática</title>
+    <meta name="description" content="[Breve descrição do artigo para SEO - máximo 160 caracteres]">
+    <meta property="og:title" content="Título do Artigo Aqui - Blog Starnew Informática" />
+    <meta property="og:description" content="[Breve descrição do artigo para SEO]" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.starnew.com.br/blog/nome-do-arquivo-do-artigo.html" />
+    <meta property="og:image" content="https://www.starnew.com.br/blog/images/imagem-destaque-artigo.jpg" /> 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Título do Artigo Aqui - Blog Starnew Informática">
+    <meta name="twitter:description" content="[Breve descrição do artigo para SEO]">
+    <meta name="twitter:image" content="https://www.starnew.com.br/blog/images/imagem-destaque-artigo.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class' // Habilita o modo escuro baseado na classe 'dark' no HTML
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: none;
+            }
+            .mobile-menu.active {
+                display: block;
+            }
+        }
+        /* Estilos adicionais para o conteúdo do artigo, se necessário */
+        .article-content h2 {
+            font-size: 1.5rem; /* Tailwind text-2xl */
+            font-weight: 600; /* Tailwind font-semibold */
+            margin-top: 1.5rem; /* Tailwind mt-6 */
+            margin-bottom: 0.75rem; /* Tailwind mb-3 */
+        }
+        .article-content h3 {
+            font-size: 1.25rem; /* Tailwind text-xl */
+            font-weight: 600; /* Tailwind font-semibold */
+            margin-top: 1.25rem; /* Tailwind mt-5 */
+            margin-bottom: 0.5rem; /* Tailwind mb-2 */
+        }
+        .article-content p {
+            line-height: 1.75; /* Tailwind leading-relaxed */
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+        }
+        .article-content ul, .article-content ol {
+            margin-left: 1.25rem; /* Tailwind ml-5 */
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+        }
+        .article-content ul li {
+            list-style-type: disc;
+        }
+        .article-content ol li {
+            list-style-type: decimal;
+        }
+        .article-content a {
+            color: #0d9488; /* Tailwind teal-600 */
+            text-decoration: underline;
+        }
+        .article-content a:hover {
+            color: #0f766e; /* Tailwind teal-700 */
+        }
+        .dark .article-content a {
+            color: #2dd4bf; /* Tailwind teal-400 */
+        }
+        .dark .article-content a:hover {
+            color: #5eead4; /* Tailwind teal-300 */
+        }
+        .article-content blockquote {
+            border-left: 4px solid #0d9488; /* Tailwind border-teal-600 */
+            padding-left: 1rem; /* Tailwind pl-4 */
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #4b5563; /* Tailwind text-gray-600 */
+        }
+        .dark .article-content blockquote {
+            border-left-color: #2dd4bf; /* Tailwind dark:border-teal-400 */
+            color: #d1d5db; /* Tailwind dark:text-gray-300 */
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.375rem; /* Tailwind rounded-md */
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+    <header class="bg-white dark:bg-slate-800 shadow-md sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html#home" class="text-2xl font-bold text-blue-600 dark:text-blue-400">Starnew Informática</a>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="../index.html#home" class="nav-link text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Home</a>
+                    <a href="../index.html#quemsomos" class="nav-link text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Quem Somos</a>
+                    <a href="../index.html#servicos" class="nav-link text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Serviços</a>
+                    <a href="../index.html#produtos-locacao" class="nav-link text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Produtos e Locação</a>
+                    <a href="../index.html#clientes-cases" class="nav-link text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Clientes</a>
+                    <a href="../index.html#blog" class="nav-link text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors font-semibold text-teal-600 dark:text-teal-400">Blog</a>
+                    <a href="../index.html#contato" class="nav-link text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Contato</a>
+                    <a href="../index.html#contato" class="bg-blue-600 dark:bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors font-semibold">Solicite Orçamento</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white dark:bg-slate-800 shadow-lg">
+            <a href="../index.html#home" class="block py-3 px-4 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Home</a>
+            <a href="../index.html#quemsomos" class="block py-3 px-4 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Quem Somos</a>
+            <a href="../index.html#servicos" class="block py-3 px-4 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Serviços</a>
+            <a href="../index.html#produtos-locacao" class="block py-3 px-4 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Produtos e Locação</a>
+            <a href="../index.html#clientes-cases" class="block py-3 px-4 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Clientes</a>
+            <a href="../index.html#blog" class="block py-3 px-4 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-teal-600 dark:hover:text-teal-400 transition-colors font-semibold text-teal-600 dark:text-teal-400">Blog</a>
+            <a href="../index.html#contato" class="block py-3 px-4 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Contato</a>
+            <a href="../index.html#contato" class="block py-3 px-4 bg-blue-600 dark:bg-blue-500 text-white text-center rounded-b-md hover:bg-blue-700 dark:hover:bg-blue-400 transition-colors font-semibold">Solicite Orçamento</a>
+        </div>
+    </header>
+
+    <main class="py-8 md:py-12">
+        <article class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl bg-white dark:bg-slate-800 p-6 sm:p-8 md:p-10 rounded-lg shadow-lg">
+            <h1 class="text-3xl sm:text-4xl font-bold text-blue-700 dark:text-blue-400 mb-4">
+                [Título do Seu Artigo Aqui]
+            </h1>
+
+            <div class="text-sm text-slate-500 dark:text-slate-400 mb-6">
+                <span>Publicado em: <time datetime="YYYY-MM-DD">[DD de Mês de YYYY]</time></span>
+                <span class="mx-2">|</span>
+                <span>Autor: [Nome do Autor]</span>
+                <span class="mx-2">|</span>
+                <span>Categoria: <a href="#" class="text-teal-600 dark:text-teal-400 hover:underline">[Nome da Categoria]</a></span>
+            </div>
+
+            
+            <figure class="mb-8">
+                <img src="../images/A-sua-estratégia-de-recrutamento-e-seleção-estimula-que-profissionais-escolham-a-sua-empresa.jpg" alt="[Descrição da imagem para acessibilidade e SEO]" class="w-full h-auto rounded-md shadow-md">
+                <figcaption class="text-xs text-center text-slate-500 dark:text-slate-400 mt-2">[Legenda da imagem, se necessário]</figcaption>
+            </figure>
+            
+
+            <div class="article-content text-slate-700 dark:text-slate-300">
+                <p>Este é o parágrafo de introdução do seu artigo. Comece com uma frase impactante ou apresente o problema que será abordado. O objetivo é prender a atenção do leitor e contextualizar o tema.</p>
+                
+                <p>Continue desenvolvendo suas ideias aqui. Use parágrafos curtos e diretos para facilitar a leitura. A Starnew Informática, como especialista em nobreaks e estabilizadores, pode compartilhar conhecimento valioso com seus clientes e potenciais clientes através deste blog.</p>
+
+                <h2>Subtítulo Importante (H2)</h2>
+                <p>Use subtítulos para organizar o conteúdo e quebrar grandes blocos de texto. Isso melhora a escaneabilidade e ajuda o leitor a encontrar as informações que procura mais rapidamente.</p>
+                <ul>
+                    <li>Você pode usar listas com marcadores.</li>
+                    <li>Para destacar pontos chave.</li>
+                    <li>Ou apresentar passos de um processo.</li>
+                </ul>
+
+                <h3>Sub-subtítulo (H3)</h3>
+                <p>Se necessário, utilize H3 para um nível ainda mais granular de organização. Lembre-se de manter a hierarquia correta dos títulos (H1 > H2 > H3).</p>
+                <ol>
+                    <li>Listas numeradas também são úteis.</li>
+                    <li>Especialmente para sequências ou rankings.</li>
+                    <li>Mantenha a clareza e a concisão.</li>
+                </ol>
+
+                <blockquote>
+                    "Use citações para destacar frases importantes, depoimentos curtos ou dados relevantes de fontes externas. Isso adiciona credibilidade e variedade visual ao seu texto."
+                </blockquote>
+
+                <p>Você pode adicionar imagens relevantes ao longo do texto para ilustrar seus pontos. Certifique-se de que as imagens sejam otimizadas para a web e tenham atributos `alt` descritivos.</p>
+                
+                <p>Conclua seu artigo resumindo os pontos principais e, idealmente, incluindo uma chamada para ação (CTA). O que você quer que o leitor faça depois de ler o post? Entrar em contato? Conhecer um serviço específico? Deixar um comentário?</p>
+
+                <p>Por exemplo, se este artigo fosse sobre a importância da manutenção preventiva, você poderia concluir com: "Não espere um problema acontecer para cuidar dos seus equipamentos. <a href="../index.html#servicos">Conheça nossos planos de manutenção preventiva</a> e garanta a tranquilidade da sua operação."</p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-2">Gostou deste artigo? Compartilhe!</p>
+                <div class="flex space-x-3">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=[URL_DO_ARTIGO_AQUI]&title=[TITULO_DO_ARTIGO_AQUI]" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">LinkedIn</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=[URL_DO_ARTIGO_AQUI]" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">Facebook</a>
+                    <a href="https://api.whatsapp.com/send?text=[TITULO_DO_ARTIGO_AQUI]%20[URL_DO_ARTIGO_AQUI]" target="_blank" rel="noopener noreferrer" class="text-green-500 hover:text-green-600 dark:text-green-400 dark:hover:text-green-300">WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700 text-center">
+                <a href="../index.html#blog" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold">&larr; Voltar para todos os artigos do Blog</a>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="bg-slate-900 dark:bg-black text-slate-400 dark:text-slate-500 py-12 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-white dark:text-slate-200 mb-3">Starnew Informática</h4>
+                    <p class="text-sm">Desde 1994, sua especialista em nobreaks e estabilizadores. Assistência Técnica Autorizada SMS, NHS e Ragtech em Salvador, Bahia.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white dark:text-slate-200 mb-3">Links Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html#quemsomos" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Quem Somos</a></li>
+                        <li><a href="../index.html#servicos" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Serviços</a></li>
+                        <li><a href="../index.html#produtos-locacao" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Produtos e Locação</a></li>
+                        <li><a href="../index.html#blog" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Blog</a></li>
+                        <li><a href="../index.html#contato" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white dark:text-slate-200 mb-3">Contato</h4>
+                    <p class="text-sm mb-1">Telefone: [Seu Telefone Principal]</p>
+                    <p class="text-sm mb-1">WhatsApp: [Seu WhatsApp]</p>
+                    <p class="text-sm mb-1">Email: <a href="mailto:contato@starnew.com.br" class="hover:text-teal-400 dark:hover:text-teal-300">contato@starnew.com.br</a></p>
+                    <p class="text-sm">[Endereço da Starnew - CONFIRMAR]</p>
+                </div>
+            </div>
+            <div class="mt-10 pt-8 border-t border-slate-700 dark:border-slate-600 text-center text-sm">
+                <p>&copy; <span id="currentYear"></span> Starnew Informática. Todos os direitos reservados.</p>
+                <p class="mt-1">
+                    <a href="../index.html#privacidade" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Política de Privacidade</a> | 
+                    <a href="../index.html#termos" class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors">Termos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="theme-toggle" title="Alternar tema" class="p-3 rounded-full fixed bottom-5 right-5 z-50 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 shadow-lg border border-slate-300 dark:border-slate-600 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors duration-300">
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm-.464 4.95a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414l-.707.707zM15 11a1 1 0 100-2H3a1 1 0 000 2h12zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('active');
+                });
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        // Para links do menu mobile que apontam para a página principal
+                        if (link.getAttribute('href').startsWith('../index.html#')) {
+                           // A navegação padrão para a âncora na página principal ocorrerá
+                           mobileMenu.classList.remove('active');
+                        } else {
+                            // Se for um link para outra página, apenas fecha o menu
+                            mobileMenu.classList.remove('active');
+                        }
+                    });
+                });
+            }
+            
+            // Set current year in footer
+            const currentYearEl = document.getElementById('currentYear');
+            if (currentYearEl) {
+                currentYearEl.textContent = new Date().getFullYear();
+            }
+
+            // Theme Toggle (Dark/Light Mode)
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                    if(themeToggleDarkIcon) themeToggleDarkIcon.classList.remove('hidden');
+                    if(themeToggleLightIcon) themeToggleLightIcon.classList.add('hidden');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    if(themeToggleDarkIcon) themeToggleDarkIcon.classList.add('hidden');
+                    if(themeToggleLightIcon) themeToggleLightIcon.classList.remove('hidden');
+                    localStorage.setItem('theme', 'light');
+                }
+            }
+
+            let preferredTheme = localStorage.getItem('theme');
+            if (!localStorage.getItem('theme') && document.documentElement.classList.contains('dark')) {
+                preferredTheme = 'dark';
+            } else if (!localStorage.getItem('theme')) {
+                preferredTheme = 'light'; 
+            }
+
+
+            if(themeToggleBtn && themeToggleDarkIcon && themeToggleLightIcon) {
+                applyTheme(preferredTheme); 
+
+                themeToggleBtn.addEventListener('click', () => {
+                    const isDarkMode = document.documentElement.classList.contains('dark');
+                    applyTheme(isDarkMode ? 'light' : 'dark');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
