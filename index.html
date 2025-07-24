@@ -1811,7 +1811,7 @@
         </div>
       </section>
 
-      <section
+      <!-- <section
         id="clientes-cases"
         class="py-16 md:py-24 bg-slate-100 dark:bg-slate-800/50 transition-colors duration-300"
       >
@@ -1934,7 +1934,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="blog" class="py-16 md:py-24 transition-colors duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -2074,6 +2074,8 @@
           <div class="grid lg:grid-cols-2 gap-10 items-start">
             <form
               id="contactForm"
+              action="https://formspree.io/f/xqalqkqd"
+              method="POST"
               class="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg space-y-6 transition-colors duration-300"
             >
               <div>
@@ -2184,6 +2186,8 @@
                   placeholder="Descreva sua necessidade ou dúvida. Quanto mais detalhes, melhor poderemos atendê-lo."
                   class="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors duration-300"
                 ></textarea>
+                <input type="hidden" name="_next" />
+                <input type="hidden" name="_subject" value="Novo contato do site">
               </div>
               <div>
                 <button
@@ -2194,6 +2198,7 @@
                 </button>
               </div>
               <div id="form-message" class="text-sm"></div>
+              <input type="text" name="_gotcha" style="display: none" />
             </form>
             <div class="space-y-8">
               <div
@@ -2765,7 +2770,6 @@
           });
         });
 
-        const contactForm = document.getElementById("contactForm");
         if (contactForm) {
           contactForm.addEventListener("submit", function (e) {
             e.preventDefault();
@@ -2886,6 +2890,36 @@
         // Chamada final para inicializar todas as funcionalidades que dependem do DOM
         updateProductTypeToggleView("compra"); // Inclui a chamada para initializeProductBrandTabs e initializeCarousels
       });
+
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const formMessage = document.getElementById("form-message");
+          formMessage.textContent = "Enviando sua mensagem...";
+          formMessage.className = "text-sm text-blue-600 dark:text-blue-400";
+
+          try {
+            const response = await fetch(contactForm.action, {
+              method: "POST",
+              body: new FormData(contactForm),
+              headers: { Accept: "application/json" },
+            });
+
+            if (response.ok) {
+              formMessage.textContent = "Mensagem enviada com sucesso!";
+              formMessage.className =
+                "text-sm text-green-600 dark:text-green-400";
+              contactForm.reset();
+            } else {
+              throw new Error("Falha no envio");
+            }
+          } catch (error) {
+            formMessage.textContent = "Erro ao enviar. Tente novamente.";
+            formMessage.className = "text-sm text-red-600 dark:text-red-400";
+          }
+        });
+      }
     </script>
   </body>
 </html>
