@@ -1,39 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.starnew.com.br/</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
+<url>
+  <loc>https://starnew.com.br/</loc>
+  <lastmod>2025-08-04T20:08:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://starnew.com.br/privacidade.html</loc>
+  <lastmod>2025-08-04T20:02:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>
+    https://starnew.com.br/blog/como-escolher-nobreak-ideal.html
+  </loc>
+  <lastmod>2025-08-04T20:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>
+    https://starnew.com.br/blog/manuten%C3%A7%C3%A3o-preventiva-Nobreaks-Estabilizadores.html
+  </loc>
+  <lastmod>2025-08-04T20:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>
+    https://starnew.com.br/blog/nobreaks-senoidais-vs-aproximados.html
+  </loc>
+  <lastmod>2025-08-04T20:01:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://starnew.com.br/termos.html</loc>
+  <lastmod>2025-08-04T20:02:25+00:00</lastmod>
+  <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://www.starnew.com.br/privacidade.html</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.starnew.com.br/termos.html</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.starnew.com.br/blog/como-escolher-nobreak-ideal.html</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.starnew.com.br/blog/manutenção-preventiva-Nobreaks-Estabilizadores.html</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.starnew.com.br/blog/nobreaks-senoidais-vs-aproximados.html</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-</urlset> 
+</urlset>
