@@ -3,9 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Starnew Informática - Assistência Técnica Autorizada em Salvador
-    </title>
+
+    <!-- SEO -->
+    <title>Starnew Informática - Assistência Técnica Autorizada SMS, NHS e Ragtech em Salvador</title>
+    <meta name="description" content="Assistência técnica autorizada em nobreaks e estabilizadores SMS, NHS e Ragtech em Salvador, BA. Venda, locação e contratos de manutenção desde 1994. Proteja seus equipamentos com quem entende do assunto." />
+    <meta name="keywords" content="assistência técnica nobreak salvador, conserto nobreak, manutenção nobreak, nobreak sms, nobreak nhs, nobreak ragtech, starnew informática, locação de nobreak, estabilizador de energia" />
+    <meta name="author" content="Starnew Informática" />
+
+    <!-- Open Graph (para Redes Sociais - Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Starnew Informática - Especialistas em Energia em Salvador" />
+    <meta property="og:description" content="Assistência técnica autorizada em nobreaks e estabilizadores SMS, NHS e Ragtech. Venda, locação e manutenção desde 1994." />
+    <meta property="og:image" content="https://www.starnew.com.br/images/og-image.jpg" />
+    <meta property="og:url" content="https://www.starnew.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.starnew.com.br/" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Starnew Informática - Especialistas em Energia em Salvador" />
+    <meta name="twitter:description" content="Assistência técnica autorizada em nobreaks e estabilizadores SMS, NHS e Ragtech. Venda, locação e manutenção desde 1994." />
+    <meta name="twitter:image" content="https://www.starnew.com.br/images/og-image.jpg" />
+
+    <!-- Structured Data (JSON-LD) para SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Starnew Informática",
+        "description": "Assistência técnica autorizada em nobreaks e estabilizadores SMS, NHS e Ragtech em Salvador, BA",
+        "foundingDate": "1994",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av Professor Rômulo Almeida, Edifício Executive Center, Loja B",
+          "addressLocality": "Salvador",
+          "addressRegion": "BA",
+          "addressCountry": "BR",
+          "postalCode": "40290-000"
+        },
+        "telephone": "+55-71-9694-3024",
+        "email": "starnew@starnew.com.br",
+        "url": "https://www.starnew.com.br",
+        "logo": "https://www.starnew.com.br/images/logo.png",
+        "image": "https://www.starnew.com.br/images/logo.png",
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": -12.9714,
+            "longitude": -38.5014
+          },
+          "geoRadius": "50000"
+        },
+        "openingHours": "Mo-Fr 08:00-17:30",
+        "priceRange": "$$",
+        "sameAs": [
+          "https://wa.me/557196943024"
+        ]
+      }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quais marcas de nobreaks vocês são assistência autorizada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Somos assistência técnica autorizada das principais marcas do mercado: SMS, NHS e Ragtech, garantindo peças originais e serviço especializado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês oferecem contratos de manutenção para empresas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, oferecemos contratos corporativos personalizados para manutenção preventiva e corretiva, assegurando atendimento prioritário e otimização de custos para sua empresa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o processo de diagnóstico e aprovação de um serviço?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Após a entrada do equipamento, nossa equipe técnica realiza uma avaliação completa em até 72h. Apresentamos o diagnóstico e o orçamento para sua aprovação antes de qualquer intervenção."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual a garantia dos serviços de manutenção?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oferecemos garantia para todos os nossos serviços de manutenção. O prazo específico varia conforme o tipo de reparo e as peças utilizadas, sendo informado no momento do orçamento."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/favicon.jpg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -51,6 +153,24 @@
   <body
     class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300"
   >
+    <!-- Banner de Consentimento de Cookies (LGPD) -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-slate-800 text-white p-4 z-50 shadow-lg">
+      <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-sm">
+          <p>Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+          <a href="privacidade.html" class="text-blue-400 hover:text-blue-300 underline">Política de Privacidade</a>.</p>
+        </div>
+        <div class="flex gap-2">
+          <button id="accept-cookies" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm font-medium">
+            Aceitar
+          </button>
+          <button id="reject-cookies" class="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm font-medium">
+            Rejeitar
+          </button>
+        </div>
+      </div>
+    </div>
+
     <header
       class="bg-white dark:bg-slate-800 shadow-md sticky top-0 z-50 transition-colors duration-300"
     >
@@ -343,6 +463,8 @@
             >
               <button
                 class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
               >
                 Quais marcas de nobreaks vocês são assistência autorizada?
                 <span
@@ -350,7 +472,7 @@
                   >&#9660;</span
                 >
               </button>
-              <div class="faq-answer px-5 text-slate-600 dark:text-slate-300">
+              <div id="faq-answer-1" class="faq-answer px-5 text-slate-600 dark:text-slate-300" role="region" aria-labelledby="faq-question-1">
                 <p>
                   Somos assistência técnica autorizada das principais marcas do
                   mercado: SMS, NHS e Ragtech, garantindo peças originais e
@@ -363,6 +485,8 @@
             >
               <button
                 class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
               >
                 Vocês oferecem contratos de manutenção para empresas?
                 <span
@@ -370,7 +494,7 @@
                   >&#9660;</span
                 >
               </button>
-              <div class="faq-answer px-5 text-slate-600 dark:text-slate-300">
+              <div id="faq-answer-2" class="faq-answer px-5 text-slate-600 dark:text-slate-300" role="region" aria-labelledby="faq-question-2">
                 <p>
                   Sim, oferecemos contratos corporativos personalizados para
                   manutenção preventiva e corretiva, assegurando atendimento
@@ -784,27 +908,30 @@
                       class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                     >
                       <img
-                        src="images/catalogo/venda-novos/nhs/nhs-mini4-700va.webp"
+                        src="images/catalogo/venda-novos/nhs/nhs-mini4-700va-2.png"
                         alt="Nobreak NHS Mini III 700VA - Vista Frontal"
                         class="object-contain w-full h-full"
+                        loading="lazy"
                       />
                     </div>
                     <div
                       class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                     >
                       <img
-                        src="images/catalogo/venda-novos/nhs/nhs-mini4-700va-2.png"
+                        src="images/catalogo/venda-novos/nhs/nhs-mini4-700va.png"
                         alt="Nobreak NHS Mini III 700VA - Vista Lateral"
                         class="object-contain w-full h-full"
+                        loading="lazy"
                       />
                     </div>
                     <div
                       class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                     >
                       <img
-                        src="images/catalogo/venda-novos/nhs/nhs-mini4-700va-3.webp"
+                        src="images/catalogo/venda-novos/nhs/nhs-mini4-700va-3.png"
                         alt="Nobreak NHS Mini III 700VA - Vista Traseira"
                         class="object-contain w-full h-full"
+                        loading="lazy"
                       />
                     </div>
                     <button
@@ -882,7 +1009,7 @@
                       class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                     >
                       <img
-                        src="images/catalogo/venda-novos/nhs/nhs-1500va.webp"
+                        src="images/catalogo/venda-novos/nhs/nhs-1500va-2.png"
                         alt="Nobreak NHS PDV 1500VA - Vista Frontal"
                         class="object-contain w-full h-full"
                       />
@@ -891,7 +1018,7 @@
                       class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                     >
                       <img
-                        src="images/catalogo/venda-novos/nhs/nhs-1500va-2.png"
+                        src="images/catalogo/venda-novos/nhs/nhs-1500va.png"
                         alt="Nobreak NHS PDV 1500VA - Vista Lateral"
                         class="object-contain w-full h-full"
                       />
@@ -900,7 +1027,7 @@
                       class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                     >
                       <img
-                        src="images/catalogo/venda-novos/nhs/nhs-1500va-3.webp"
+                        src="images/catalogo/venda-novos/nhs/nhs-1500va-3.png"
                         alt="Nobreak NHS PDV 1500VA - Vista Traseira"
                         class="object-contain w-full h-full"
                       />
@@ -980,7 +1107,7 @@
                       class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                     >
                       <img
-                        src="images/catalogo/venda-novos/nhs/nhs-premium2000va.webp"
+                        src="images/catalogo/venda-novos/nhs/nhs-premium2000va.png"
                         alt="Nobreak NHS Premium 2000VA - Vista Frontal"
                         class="object-contain w-full h-full"
                       />
@@ -1090,7 +1217,7 @@
                     >
                       <img
                         src="images/catalogo/venda-novos/sms/sms-lite-2.png"
-                        alt="Nobreak SMS LITE 600 VA - Vista Lateral"
+                        alt="Nobreak SMS LITE 600 VA - Vista Traseira"
                         class="object-contain w-full h-full"
                       />
                     </div>
@@ -1446,7 +1573,7 @@
                     class="carousel-item absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 flex items-center justify-center z-0"
                   >
                     <img
-                      src="images/catalogo/aluguel/nhs-premium-rack-3kva.webp"
+                      src="images/catalogo/aluguel/nhs-premium-rack-3kva.png"
                       alt="Nobreak NHS PREMIUM OL RACK 3KVA - Vista 1"
                       class="object-contain w-full h-full"
                     />
@@ -1971,6 +2098,7 @@
                 src="./blog/como-escolher-nobreak-ideal/img.jpg"
                 alt="Nobreaks protegendo computadores e servidores em um ambiente de escritório moderno."
                 class="w-full h-auto rounded-md shadow-md"
+                loading="lazy"
               />
               <div class="p-6 flex flex-col flex-grow">
                 <h3
@@ -1987,7 +2115,7 @@
                   proteger seus equipamentos críticos.
                 </p>
                 <a
-                  href="blog/como-escolher-nobreak-ideal/como-escolher-nobreak-ideal.html"
+                  href="blog/como-escolher-nobreak-ideal.html"
                   class="mt-auto text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold self-start"
                   >Leia Mais &rarr;</a
                 >
@@ -2000,6 +2128,7 @@
                 src="./blog/manutenção-preventiva-Nobreaks-Estabilizadores/img.png"
                 alt="Técnico realizando manutenção preventiva em um nobreak em ambiente empresarial."
                 class="w-full h-auto rounded-md shadow-md"
+                loading="lazy"
               />
               <div class="p-6 flex flex-col flex-grow">
                 <h3
@@ -2016,7 +2145,7 @@
                   vida útil dos seus estabilizadores.
                 </p>
                 <a
-                  href="blog/manutenção-preventiva-Nobreaks-Estabilizadores/manutenção-preventiva-Nobreaks-Estabilizadores.html"
+                  href="blog/manutenção-preventiva-Nobreaks-Estabilizadores.html"
                   class="mt-auto text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold self-start"
                   >Leia Mais &rarr;</a
                 >
@@ -2026,9 +2155,10 @@
               class="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-colors duration-300"
             >
               <img
-                src="./blog/nobreaks-senoidais-vs-aproximados/img.webp"
+                src="./blog/nobreaks-senoidais-vs-aproximados/img.png"
                 alt="Comparação gráfica entre onda senoidal pura e onda senoidal aproximada (PWM)."
                 class="w-full h-auto rounded-md shadow-md"
+                loading="lazy"
               />
               <div class="p-6 flex flex-col flex-grow">
                 <h3
@@ -2045,7 +2175,7 @@
                   sensíveis.
                 </p>
                 <a
-                  href="blog/nobreaks-senoidais-vs-aproximados/nobreaks-senoidais-vs-aproximados.html"
+                  href="blog/nobreaks-senoidais-vs-aproximados.html"
                   class="mt-auto text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-semibold self-start"
                   >Leia Mais &rarr;</a
                 >
@@ -2202,6 +2332,12 @@
                   name="_subject"
                   value="Novo contato do site"
                 />
+              </div>
+              <div class="flex items-start space-x-3">
+                <input type="checkbox" id="privacy-consent" name="privacy-consent" required class="mt-1" />
+                <label for="privacy-consent" class="text-sm text-slate-600 dark:text-slate-300">
+                  Concordo com a <a href="privacidade.html" class="text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 underline">Política de Privacidade</a> e autorizo o tratamento dos meus dados pessoais para fins de contato. *
+                </label>
               </div>
               <div>
                 <button
@@ -2388,13 +2524,13 @@
           </p>
           <p class="mt-1">
             <a
-              href="#privacidade"
+              href="privacidade.html"
               class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors"
               >Política de Privacidade</a
             >
             |
             <a
-              href="#termos"
+              href="termos.html"
               class="hover:text-teal-400 dark:hover:text-teal-300 transition-colors"
               >Termos de Uso</a
             >
@@ -2901,6 +3037,40 @@
             applyTheme(isDarkMode ? "light" : "dark");
           });
         }
+        // Banner de Cookies LGPD
+        const cookieBanner = document.getElementById("cookie-banner");
+        const acceptCookiesBtn = document.getElementById("accept-cookies");
+        const rejectCookiesBtn = document.getElementById("reject-cookies");
+
+        function hideCookieBanner() {
+          if (cookieBanner) {
+            cookieBanner.style.display = "none";
+          }
+        }
+
+        function showCookieBanner() {
+          if (cookieBanner && !localStorage.getItem("cookieConsent")) {
+            cookieBanner.style.display = "block";
+          }
+        }
+
+        if (acceptCookiesBtn) {
+          acceptCookiesBtn.addEventListener("click", () => {
+            localStorage.setItem("cookieConsent", "accepted");
+            hideCookieBanner();
+          });
+        }
+
+        if (rejectCookiesBtn) {
+          rejectCookiesBtn.addEventListener("click", () => {
+            localStorage.setItem("cookieConsent", "rejected");
+            hideCookieBanner();
+          });
+        }
+
+        // Verificar se o banner deve ser mostrado
+        showCookieBanner();
+
         // Chamada final para inicializar todas as funcionalidades que dependem do DOM
         updateProductTypeToggleView("compra"); // Inclui a chamada para initializeProductBrandTabs e initializeCarousels
       });
