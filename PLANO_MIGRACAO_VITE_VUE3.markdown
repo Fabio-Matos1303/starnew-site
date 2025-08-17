@@ -77,13 +77,12 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
   - Lighthouse A11y ≥ 95.
 
 ### Sprint 4 — Formulário de Contato (LGPD)
-- Componente `ContactForm` com validação Zod + Reactividade Vue.
-- Integração Formspree via `fetch` com feedback de loading/sucesso/erro.
-- Checkbox obrigatório de consentimento + links para `Privacidade`.
-- Proteções anti‑spam (honeypot, tempo mínimo, rate limit na borda se houver BFF).
+- `ContactForm.vue` criado com validação Zod, estados de erro, loading e mensagens. ✅ Concluído
+- Integração com Formspree (action) e honeypot + tempo mínimo anti‑spam. ✅ Concluído
+- Checkbox obrigatório de consentimento com link para `privacidade.html`. ✅ Concluído
 - Critérios de aceite:
-  - Erros de validação claros e acessíveis.
-  - Envio resiliente com estados de UI.
+  - Validação e feedback acessíveis. ✅
+  - Envio resiliente com estados de UI. ✅
 
 ### Sprint 5 — Páginas Legais e Roteamento
 - Vue Router (history mode). Rotas: `/`, `/privacidade`, `/termos`.

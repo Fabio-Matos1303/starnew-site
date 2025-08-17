@@ -18,6 +18,10 @@ export default [
         window: 'readonly',
         document: 'readonly',
         localStorage: 'readonly',
+        fetch: 'readonly',
+        FormData: 'readonly',
+        Event: 'readonly',
+        HTMLFormElement: 'readonly',
       }
     },
     rules: {

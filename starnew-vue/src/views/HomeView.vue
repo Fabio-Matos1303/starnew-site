@@ -4,6 +4,7 @@ import ProductTabs from '@/components/ProductTabs.vue'
 import ClientsCases from '@/components/ClientsCases.vue'
 import FAQ from '@/components/FAQ.vue'
 import BlogTeaser from '@/components/BlogTeaser.vue'
+import ContactForm from '@/components/ContactForm.vue'
 
 useHead({
   title: 'Starnew Informática — Assistência técnica de nobreaks e estabilizadores',
@@ -54,7 +55,7 @@ useHead({
     <section id="contato" class="py-16">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-semibold mb-4">Contato</h2>
-        <p class="text-slate-600 dark:text-slate-300">Formulário será implementado na Sprint 4.</p>
+        <ContactForm />
       </div>
     </section>
   </main>
