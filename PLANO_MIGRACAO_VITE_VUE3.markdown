@@ -101,21 +101,13 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
   - Rich Results para LocalBusiness/FAQ em validação. ⏳
 
 ### Sprint 7 — Imagens e Performance
-- Pipeline de imagens: conversão para WebP/AVIF, geração de `srcset/sizes`.
-- `vite-plugin-image-optimizer` (ou processo externo + assets em `public`).
-- Lazy loading, placeholders blur, dimensões explícitas para evitar CLS.
-- `vite-plugin-compression` (brotli) + habilitar brotli no Nginx/Cloudflare.
-- Critérios de aceite:
-  - LCP ≤ 2.5s em 4G ‘Slow’ na homepage.
-  - Tamanho total transferido reduzido significativamente (≥ 50% vs baseline).
+- Otimizador de imagens configurado no Vite (`vite-plugin-image-optimizer`). ✅ Em progresso
+- Próximo: aplicar `<picture>`/`srcset` nas imagens e revisar dimensões/lazy. ⏳
+- Brotli/CDN será tratado no deploy (fora do repositório). ⏳
 
 ### Sprint 8 — PWA e Consent‑Aware Analytics
-- `vite-plugin-pwa`: manifest.json, ícones, pre‑cache, atualização suave.
-- Gate de scripts de terceiros por consentimento (GA4 via GTM opcional).
-- Ajuste de CSP para incluir apenas domínios necessários, sem `'unsafe-inline'`.
-- Critérios de aceite:
-  - PWA installable + offline básico.
-  - CSP estrita sem quebras (relatórios `report-to` opcional).
+- `vite-plugin-pwa` integrado com manifest básico e autoUpdate. ✅ Em progresso
+- Próximo: ícones reais, cache strategy e gate por consentimento. ⏳
 
 ### Sprint 9 — Blog (Fase 1: Público Estático; Fase 2: Markdown)
 - Fase 1: mover `blog/*` para `public/blog` e linkar do `BlogTeaser`.
