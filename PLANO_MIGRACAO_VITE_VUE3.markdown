@@ -55,13 +55,14 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
   - `npm run lint` e `npm run typecheck` passam localmente e via hook. ✅
 
 ### Sprint 2 — Layout Base, Tema e Cabeçalhos
-- Implementar `App.vue` com layout base, `Header`, `Footer` e shell da SPA.
-- Componente `ThemeToggle` com persistência em `localStorage` (sem inline JS).
-- Componente `CookieBanner` com estados aceitar/rejeitar (localStorage) e eventos para gate de scripts.
-- Migrar identidade visual e tokens (cores, fontes) para Tailwind config.
-- Critérios de aceite:
-  - Paridade visual do header/footer e tema claro/escuro.
-  - Sem estilos/JS inline no HTML final.
+- `App.vue` com layout base e shell da SPA. ✅ Concluído
+- Componentes criados: `Header.vue`, `Footer.vue`, `ThemeToggle.vue`, `CookieBanner.vue`. ✅ Concluído
+- Tema: alternância claro/escuro com persistência em `localStorage`. ✅ Concluído
+- Banner de cookies com aceitar/rejeitar. ✅ Concluído
+- Próximos itens: refinar identidade visual no Tailwind config (tokens), criar navegação mobile. ⏳
+- Critérios de aceite (parcial):
+  - Estrutura do shell entregues. ✅
+  - Sem JS inline no HTML. ✅
 
 ### Sprint 3 — Seções Principais da Home
 - Componentizar: `Hero`, `QuemSomos`, `Servicos`, `ProdutosLocacao` (abas/carrossel), `ClientesCases`, `FAQ`, `BlogTeaser`, `Contato`.

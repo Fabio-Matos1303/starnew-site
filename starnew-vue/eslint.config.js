@@ -14,6 +14,11 @@ export default [
     languageOptions: {
       parser: vueParser,
       parserOptions: { ecmaVersion: 'latest', sourceType: 'module', parser: tsParser, extraFileExtensions: ['.vue'] },
+      globals: {
+        window: 'readonly',
+        document: 'readonly',
+        localStorage: 'readonly',
+      }
     },
     rules: {
       'vue/multi-word-component-names': 'off',
