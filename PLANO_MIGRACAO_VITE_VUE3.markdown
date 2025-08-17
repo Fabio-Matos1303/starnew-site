@@ -67,7 +67,8 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
   - Sem JS inline no HTML. ✅
 
 ### Sprint 3 — Seções Principais da Home
-- Componentizar: `Hero`, `QuemSomos`, `Servicos`, `ProdutosLocacao` (abas/carrossel), `ClientesCases`, `FAQ`, `BlogTeaser`, `Contato`.
+- Estrutura inicial da Home criada: `Hero`, âncoras `#quemsomos`, `#servicos`, `#contato`. ✅ Em progresso
+- Próximos componentes: `ProdutosLocacao` (abas/carrossel), `ClientesCases`, `FAQ`, `BlogTeaser`. ⏳
 - Acessibilidade: navegação por teclado, ARIA e foco.
 - Navegação suave e destaque de seção ativa via Vue (intersection observer).
 - Critérios de aceite:

@@ -7,6 +7,10 @@
   --color-fg: #0f172a; /* slate-900 */
   --color-bg-dark: #0b1220; /* slate-950-ish */
   --color-fg-dark: #e2e8f0; /* slate-200 */
+  --color-brand: #2563eb; /* blue-600 */
+  --color-brand-dark: #60a5fa; /* blue-400 */
+  --color-accent: #14b8a6; /* teal-500 */
+  --color-accent-dark: #5eead4; /* teal-300 */
 }
 
 html { scroll-behavior: smooth; }
