@@ -43,14 +43,16 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
   - Baseline de performance/SEO/A11y registrada.
 
 ### Sprint 1 — Fundações do Projeto
-- Scaffold: `npm create vite@latest starnew-vue -- --template vue-ts`.
-- Instalar dependências: Vue Router, @vueuse/head, @tanstack/vue-query, tailwindcss, postcss, autoprefixer, zod, vite-plugin-pwa, vite-plugin-compression, vite-plugin-image-optimizer.
-- Configurar Tailwind (`content` apontando para `src/**/*.{vue,ts}`) e remover Tailwind CDN.
-- ESLint + Prettier + Husky (pre-commit: lint + typecheck).
-- Estrutura de pastas (`src/components`, `src/views`, `src/assets`, `public`).
+- Scaffold: `npm create vite@latest starnew-vue -- --template vue-ts`. ✅ Concluído
+- Dependências instaladas: Vue Router, @vueuse/head, @tanstack/vue-query, tailwindcss v4, postcss, autoprefixer, zod, vite-plugin-pwa, vite-plugin-compression, vite-plugin-image-optimizer, eslint, prettier, husky. ✅ Concluído
+- Base de código: Router configurado, `App.vue` com `<RouterView/>`, `HomeView.vue` com metadados via `@vueuse/head`. ✅ Concluído
+- Estilos: Tailwind v4 aplicado via `@import "tailwindcss"` em `src/style.css`. ✅ Concluído
+- Qualidade: ESLint (flat config) + Prettier configurados; Husky pre-commit (lint + typecheck). ✅ Concluído
+- Scripts: `lint`, `format`, `typecheck` adicionados ao `package.json`. ✅ Concluído
+- Build: `npm run build` verde. ✅ Concluído
 - Critérios de aceite:
-  - `npm run dev` e `npm run build` verdes.
-  - Lint/format/typecheck passam no CI.
+  - `npm run dev` e `npm run build` verdes. ✅
+  - `npm run lint` e `npm run typecheck` passam localmente e via hook. ✅
 
 ### Sprint 2 — Layout Base, Tema e Cabeçalhos
 - Implementar `App.vue` com layout base, `Header`, `Footer` e shell da SPA.
