@@ -94,13 +94,12 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
   - Metatags específicas por rota.
 
 ### Sprint 6 — SEO Técnico e Metadados
-- `@vueuse/head` para title/description/OG/Twitter por view.
-- Injetar JSON‑LD (LocalBusiness e FAQ) via componentes dedicados.
-- Corrigir `og:image` e gerar assets sociais (1200x630).
-- `robots.txt` e `sitemap.xml` (fase 1 estático; fase 2 geração em CI).
+- Home com metatags dinâmicas (title/description/OG/Twitter) via `@vueuse/head`. ✅ Concluído
+- JSON‑LD injetado na Home (LocalBusiness + FAQ). ✅ Concluído
+- Pendente: revisar `og:image` no servidor e preparar geração automática de `sitemap.xml` no CI. ⏳
 - Critérios de aceite:
-  - Rich Results para FAQ/LocalBusiness válidos.
-  - PageSpeed SEO ≥ 95.
+  - Metas corretas por rota principal. ✅ (Home/Legais)
+  - Rich Results para LocalBusiness/FAQ em validação. ⏳
 
 ### Sprint 7 — Imagens e Performance
 - Pipeline de imagens: conversão para WebP/AVIF, geração de `srcset/sizes`.

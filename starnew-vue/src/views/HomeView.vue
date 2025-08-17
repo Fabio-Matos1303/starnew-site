@@ -10,7 +10,60 @@ useHead({
   title: 'Starnew Informática — Assistência técnica de nobreaks e estabilizadores',
   meta: [
     { name: 'description', content: 'Assistência técnica autorizada SMS, NHS e Ragtech em Salvador. Venda, locação e contratos de manutenção.' },
-  ]
+    { property: 'og:title', content: 'Starnew Informática - Especialistas em Energia em Salvador' },
+    { property: 'og:description', content: 'Assistência técnica autorizada em nobreaks e estabilizadores SMS, NHS e Ragtech. Venda, locação e manutenção desde 1994.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://www.starnew.com.br/' },
+    { property: 'og:image', content: 'https://www.starnew.com.br/images/og-image.jpg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Starnew Informática - Especialistas em Energia em Salvador' },
+    { name: 'twitter:description', content: 'Assistência técnica autorizada em nobreaks e estabilizadores SMS, NHS e Ragtech.' },
+    { name: 'twitter:image', content: 'https://www.starnew.com.br/images/og-image.jpg' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.starnew.com.br/' },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        name: 'Starnew Informática',
+        description: 'Assistência técnica autorizada em nobreaks e estabilizadores SMS, NHS e Ragtech em Salvador, BA',
+        url: 'https://www.starnew.com.br',
+        telephone: '+55-71-9694-3024',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Av Professor Rômulo Almeida, Edifício Executive Center, Loja B',
+          addressLocality: 'Salvador',
+          addressRegion: 'BA',
+          addressCountry: 'BR',
+          postalCode: '40290-000',
+        },
+        openingHours: 'Mo-Fr 08:00-17:30',
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Quais marcas de nobreaks vocês são assistência autorizada?',
+            acceptedAnswer: { '@type': 'Answer', text: 'SMS, NHS e Ragtech.' },
+          },
+          {
+            '@type': 'Question',
+            name: 'Vocês oferecem contratos de manutenção para empresas?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Sim, com planos personalizados e SLA.' },
+          },
+        ],
+      }),
+    },
+  ],
 })
 </script>
 
