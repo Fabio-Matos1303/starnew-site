@@ -15,6 +15,8 @@ function closeMobile() { mobileOpen.value = false }
         <a href="#quemsomos" class="hover:text-teal-600">Quem Somos</a>
         <a href="#servicos" class="hover:text-teal-600">Serviços</a>
         <a href="#contato" class="hover:text-teal-600">Contato</a>
+        <RouterLink to="/privacidade" class="hover:text-teal-600">Privacidade</RouterLink>
+        <RouterLink to="/termos" class="hover:text-teal-600">Termos</RouterLink>
       </nav>
       <div class="flex items-center gap-2">
         <button @click="toggleMobile" class="md:hidden inline-flex items-center justify-center rounded p-2 border border-slate-300 dark:border-slate-700" aria-label="Abrir menu">
@@ -29,6 +31,8 @@ function closeMobile() { mobileOpen.value = false }
         <a @click="closeMobile" href="#quemsomos" class="block py-2">Quem Somos</a>
         <a @click="closeMobile" href="#servicos" class="block py-2">Serviços</a>
         <a @click="closeMobile" href="#contato" class="block py-2">Contato</a>
+        <RouterLink @click="closeMobile" to="/privacidade" class="block py-2">Privacidade</RouterLink>
+        <RouterLink @click="closeMobile" to="/termos" class="block py-2">Termos</RouterLink>
       </nav>
     </div>
   </header>

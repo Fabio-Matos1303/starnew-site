@@ -85,9 +85,9 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
   - Envio resiliente com estados de UI. ✅
 
 ### Sprint 5 — Páginas Legais e Roteamento
-- Vue Router (history mode). Rotas: `/`, `/privacidade`, `/termos`.
-- Migrar conteúdo das páginas estáticas para `views` dedicadas, mantendo SEO.
-- Incluir breadcrumbs e navegação consistente.
+- Rotas adicionadas: `/privacidade` e `/termos` com views dedicadas. ✅ Concluído
+- Header atualizado com links para páginas legais (desktop e mobile). ✅ Concluído
+- Migração de conteúdo: pendente (substituir placeholders pelo conteúdo de `privacidade.html` e `termos.html`). ⏳
 - Ajustar Nginx para fallback SPA: `try_files $uri $uri/ /index.html;`.
 - Critérios de aceite:
   - Rotas funcionam em refresh direto (Nginx ok).
