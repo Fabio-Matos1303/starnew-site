@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import ProductTabs from '@/components/ProductTabs.vue'
+import ClientsCases from '@/components/ClientsCases.vue'
+import FAQ from '@/components/FAQ.vue'
+import BlogTeaser from '@/components/BlogTeaser.vue'
 
 useHead({
   title: 'Starnew Informática — Assistência técnica de nobreaks e estabilizadores',
@@ -30,6 +33,9 @@ useHead({
         <div class="aspect-video rounded-xl bg-gradient-to-br from-blue-200/40 to-teal-200/40 dark:from-blue-900/30 dark:to-teal-900/30"></div>
       </div>
     </section>
+    <ClientsCases />
+    <FAQ />
+    <BlogTeaser />
 
     <!-- Âncoras principais -->
     <section id="quemsomos" class="py-16">
