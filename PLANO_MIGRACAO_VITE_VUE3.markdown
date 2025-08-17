@@ -59,7 +59,9 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
 - Componentes criados: `Header.vue`, `Footer.vue`, `ThemeToggle.vue`, `CookieBanner.vue`. ✅ Concluído
 - Tema: alternância claro/escuro com persistência em `localStorage`. ✅ Concluído
 - Banner de cookies com aceitar/rejeitar. ✅ Concluído
-- Próximos itens: refinar identidade visual no Tailwind config (tokens), criar navegação mobile. ⏳
+- Navegação mobile adicionada no `Header.vue` (menu hambúrguer). ✅ Concluído
+- Tokens básicos de tema aplicados em `src/style.css`. ✅ Concluído
+- Próximos itens: ajustar branding (logo, paleta) e preparar seções da Home (Sprint 3). ⏳
 - Critérios de aceite (parcial):
   - Estrutura do shell entregues. ✅
   - Sem JS inline no HTML. ✅
