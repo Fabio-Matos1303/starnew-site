@@ -60,8 +60,7 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
 - Tema: alternância claro/escuro com persistência em `localStorage`. ✅ Concluído
 - Banner de cookies com aceitar/rejeitar. ✅ Concluído
 - Navegação mobile adicionada no `Header.vue` (menu hambúrguer). ✅ Concluído
-- Tokens básicos de tema aplicados em `src/style.css`. ✅ Concluído
-- Próximos itens: ajustar branding (logo, paleta) e preparar seções da Home (Sprint 3). ⏳
+- Branding: logo aplicado no header; paleta ajustada via tokens (`--color-brand`, `--color-accent`). ✅ Concluído
 - Critérios de aceite (parcial):
   - Estrutura do shell entregues. ✅
   - Sem JS inline no HTML. ✅
