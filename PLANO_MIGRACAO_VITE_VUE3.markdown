@@ -68,7 +68,8 @@ Migrar o site atual (HTML + CSS + JS inline) para uma SPA moderna com Vite + Vue
 
 ### Sprint 3 — Seções Principais da Home
 - Estrutura inicial da Home criada: `Hero`, âncoras `#quemsomos`, `#servicos`, `#contato`. ✅ Em progresso
-- Próximos componentes: `ProdutosLocacao` (abas/carrossel), `ClientesCases`, `FAQ`, `BlogTeaser`. ⏳
+- `ProdutosLocacao`: abas iniciais implementadas (`ProductTabs.vue`). ✅ Em progresso
+- Próximos componentes: `ClientesCases`, `FAQ`, `BlogTeaser`. ⏳
 - Acessibilidade: navegação por teclado, ARIA e foco.
 - Navegação suave e destaque de seção ativa via Vue (intersection observer).
 - Critérios de aceite:

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import ProductTabs from '@/components/ProductTabs.vue'
 
 useHead({
   title: 'Starnew Informática — Assistência técnica de nobreaks e estabilizadores',
@@ -40,7 +41,8 @@ useHead({
     <section id="servicos" class="py-16 bg-slate-50 dark:bg-slate-800/40">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-semibold mb-4">Serviços</h2>
-        <p class="text-slate-600 dark:text-slate-300">Conteúdo a migrar da versão atual.</p>
+        <p class="text-slate-600 dark:text-slate-300 mb-6">Conteúdo a migrar da versão atual.</p>
+        <ProductTabs />
       </div>
     </section>
     <section id="contato" class="py-16">
